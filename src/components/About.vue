@@ -23,7 +23,7 @@
             <b-navbar-item class="textContent-vbarIten textContent" href="http://cloud.shellhub.io/" target="_blank">
               Login
             </b-navbar-item>
-            <b-navbar-item class="textContent-vbarIten textContent" href="https://shellhub-io.github.io/" target="_blank">
+            <b-navbar-item class="textContent-vbarIten textContent" href="./register">
               Register
             </b-navbar-item>
           </template>
@@ -53,7 +53,7 @@
 
       
       <div class="rectangleRegister">
-        <a class="rectangleRegister" href="https://shellhub-io.github.io/" target="_blank">
+        <a class="rectangleRegister" href="./register">
           
           <div class="rectangleRegister-first">
             <div class="textContent-fontRetangle textContent">
@@ -148,8 +148,8 @@ body{
   /* width: 1280px; */
   height: 771px;
   /* background-image: url('../static/nuvem.png'), url('../static/forkme-dark-background.png'); */
-  /* background-image: url('../static/nuvem.png');
-  background-repeat: no-repeat;
+   /* background-image: url('../static/pattrn2-preto-pequeno.png'); */
+  /*background-repeat: no-repeat;
   background-position: top right; */
 }
 

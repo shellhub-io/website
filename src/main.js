@@ -35,6 +35,8 @@
 // }
 
 import Vue from 'vue'
+// import Vuetify from 'vuetify'
+// import 'vuetify/dist/vuetify.min.css'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import DefaultLayout from '~/layouts/Default.vue'
@@ -43,9 +45,33 @@ import Feature from '~/components/Feature.vue'
 import More from '~/components/More.vue'
 import Bottom from '~/components/Bottom.vue'
 
-
+import Router from 'vue-router' // << aqui
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+ 
+Vue.use(Router) // << e aqui
+Vue.use(VueAxios, axios)
 
 Vue.use(Buefy)
+// Vue.use(Vuetify)
+
+const router = new Router({
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes: [
+      {
+        path: "/",
+        component: () =>
+            import("./pages/Index.vue")
+      },
+      {
+          path: "/register",
+          // name: "register",
+          component: () =>
+              import("./pages/register.vue")
+      },
+  ]
+});
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component

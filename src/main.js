@@ -48,6 +48,7 @@ import Bottom from '~/components/Bottom.vue'
 import Router from 'vue-router' // << aqui
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import "./vee-validate";
  
 Vue.use(Router) // << e aqui
 Vue.use(VueAxios, axios)
@@ -59,17 +60,23 @@ const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
-      {
-        path: "/",
-        component: () =>
-            import("./pages/Index.vue")
-      },
-      {
-          path: "/register",
-          // name: "register",
-          component: () =>
-              import("./pages/register.vue")
-      },
+    {
+      path: "/",
+      component: () =>
+        import("./pages/Index.vue")
+    },
+    {
+      path: "/register",
+      name: "register",
+      component: () =>
+        import("./pages/register.vue")
+    },
+    // {
+    //   path: "/login",
+    //   name: "login",
+    //   component: () =>
+    //     import("./pages/login.vue")
+    // },
   ]
 });
 

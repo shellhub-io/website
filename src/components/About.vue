@@ -1,81 +1,70 @@
 <template>
   <div class="textura">
+    <!-- <div class="teste1"> -->
 
-    
-
-    <div class="teste1">
-
-
-    <div class="scope">
-      
-
-      <div class="menu">
-        <b-navbar :fixed-top="false"  :is-transparent="true" class="is-transparent">
+      <div class="scope">
+        <div class="menu">
+          <b-navbar :fixed-top="false"  :is-transparent="true" class="is-transparent">
+                  
+            <template slot="brand">
+              <img class="ShellHub-Logo-Negativo" src="@/static/logo-inverted.png">
+            </template>
+                  
+            <template slot="end">
+              <b-navbar-item class="textContent-vbarIten textContent" href="https://shellhub-io.github.io/" target="_blank">
+                Documentation
+              </b-navbar-item>
+              <!-- <b-navbar-item class="textContent-vbarIten textContent">
+                <a href="https://www.ossystems.com.br/" target="_blank">O.S.Systems</a>
+                </b-navbar-item> -->
+              <b-navbar-item class="textContent-vbarIten textContent" href="http://cloud.shellhub.io/">
+                Login
+              </b-navbar-item>
+              <b-navbar-item class="textContent-vbarIten textContent" href="./register">
+                Register
+              </b-navbar-item>
+            </template>
                 
-          <template slot="brand">
-            <img class="ShellHub-Logo-Negativo" src="@/static/logo-inverted.png">
-          </template>
-                
-          <template slot="end">
-            <b-navbar-item class="textContent-vbarIten textContent" href="https://shellhub-io.github.io/" target="_blank">
-              Documentation
-            </b-navbar-item>
-            <b-navbar-item class="textContent-vbarIten textContent" href="http://cloud.shellhub.io/" target="_blank">
-              Login
-            </b-navbar-item>
-            <b-navbar-item class="textContent-vbarIten textContent" href="./register">
-              Register
-            </b-navbar-item>
-          </template>
-              
-        </b-navbar>
+          </b-navbar>
+        </div>
+
+        <div class="forkme">
+          <span id="forkongithub"><a href="https://github.com/shellhub-io/shellhub" target="_blank">Fork me on GitHub</a></span>
+        </div>    
       </div>
 
-      <div class="forkme">
-        <!-- <a href="https://github.com/you"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_white_ffffff.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-        <!-- <a href="https://github.com/you"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_white_ffffff.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-        <span id="forkongithub"><a href="https://github.com/shellhub-io/shellhub" target="_blank">Fork me on GitHub</a></span>
-        <!-- <a class="forkmeFigure" href="http://www.stackoverflow.com"></a> -->
-          <!-- <img class="forkmeFigure" src="@/static/forkme-dark-background.png" href="https://shellhub-io.github.io/"> -->
-      </div>
-      
-    </div>
+      <div class="aboutShellHub">
 
-    <div class="aboutShellHub">
-
-      <div class="titleContent-titleAbout titleContent">
+        <div class="titleContent-titleAbout titleContent">
           Get seamless remote access to any Linux device
-      </div>
+        </div>
 
-      <div class="textContent-contentAbout textContent">
-        ShellHub is a modern SSH server for remotely accessing Linux devices via command line (using any SSH client) or web-based user interface. 
-      </div>
+        <div class="textContent-contentAbout textContent">
+          ShellHub is a modern SSH server for remotely accessing Linux devices via command line (using any SSH client) or web-based user interface. 
+        </div>
 
-      
-      <div class="rectangleRegister">
-        <a class="rectangleRegister" href="./register">
-          
-          <div class="rectangleRegister-first">
-            <div class="textContent-fontRetangle textContent">
-              Register now
-            </div>
-          </div>
-          <div class="rectangleRegister-second">
-            <div class="textContent-fontRetangle textContent">
-              &nbsp;  
-              <img src="@/static/bullet-01.png">
-              &nbsp;
-            </div>
-          </div>
         
-        </a>
-     
+        <div class="rectangleRegister">
+          <a class="rectangleRegister" href="./register">
+            
+            <div class="rectangleRegister-first">
+              <div class="textContent-fontRetangle textContent">
+                Register now
+              </div>
+            </div>
+            <div class="rectangleRegister-second">
+              <div class="textContent-fontRetangle textContent">
+                &nbsp;  
+                <img src="@/static/bullet-01.png">
+                &nbsp;
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
-    </div>
-    <div class="teste">
-    </div>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -87,18 +76,18 @@ export default {
     };
   },
   methods: {
-    clickMethod() {
-      console.log("AQUIIIIIIIII")
-    },
+    // clickMethod() {
+    //   console.log("AQUIIIIIIIII")
+    // },
   },
 };
 </script>
 
 <style>
 
-.jucaa{
+/* .jucaa{
   z-index: 999;
-}
+} */
 
 .scope{
   width: 100%;
@@ -122,7 +111,7 @@ body{
   padding-top: 0px!important;
 }
 
-.teste{
+/* .teste{ */
   /* max-width: 1600px; */
   /* height: 771px;
   background-image: url('../static/Nuvem_Shellhub_Completo.png');
@@ -132,21 +121,22 @@ body{
   align-items: center;
   margin: 0 auto 0 auto; */
   /* position: absolute; */
-  z-index: 88;
-}
+  /* z-index: 88; */
+/* } */
 
-.teste1{
-  width: 100%;
+/* .teste1{ */
+  /* width: 100%; */
   /* height: 771px; */
-  position: absolute;
+  /* position: absolute; */
   /* z-index: 2; */
-}
+/* } */
 
 
 .textura {
-  z-index: 1;
+  /* z-index: 1; */
   /* width: 1280px; */
   height: 771px;
+  /* background: #394573; */
   /* background-image: url('../static/nuvem.png'), url('../static/forkme-dark-background.png'); */
    /* background-image: url('../static/pattrn2-preto-pequeno.png'); */
   /*background-repeat: no-repeat;
@@ -168,7 +158,6 @@ nav.navbar {
   z-index: 2;
   background: transparent;
   margin-top: 41px;
-  /* align-items: center; */
   margin-left: 55px;
   margin-right: 149px;
 }
@@ -182,6 +171,10 @@ nav.navbar {
   background-color: None;
   color: #dce3ff;
   margin-left: 40px;
+}
+
+.href:hover{
+  color: #dce3ff;
 }
 
 .aboutShellHub{
@@ -235,11 +228,9 @@ nav.navbar {
   font-style: normal;
   line-height: 1.67;
   letter-spacing: 0.5px;
-  /* text-align: center; */
   color: #ffffff;
   width: 100%;
   height: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;

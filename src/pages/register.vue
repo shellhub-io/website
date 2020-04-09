@@ -10,52 +10,94 @@
         </div>
 
         <div class="row">
-          <div class="testess">
+          <div class="row-items">
             <div class="new-account">
               New Account
             </div>
 
-            <b-field label="Username:"
-                :type="{ 'is-danger': this.hasErrorUser }"
-                :message="[
-                    { 'Username is not available': this.hasErrorUserAvailable },
-                    { 'Username was not inserted': this.hasErrorUserinserted }
-                    ]">
-                <b-input v-model="username" value='juca' maxlength="30" placeholder="Username" @input='verifyUserName'></b-input>
-            </b-field>
+            <div>
 
-            <b-field label="Password:"
-                :type="{ 'is-danger': this.hasErrorPass }"
-                :message="[
-                    { 'Password was not inserted': this.hasErrorPass },
-                ]">
-                <b-input v-model="password" value='' type="password" maxlength="30" placeholder="Password" password-reveal @input='verifyPassword'></b-input>
-            </b-field>
 
-            <b-field label="Password (again):"
-                :type="{ 'is-danger': this.hasErrorPassAgain || this.hasErrorPassAgainDiff}"
-                :message="[
-                    { 'Password again was not inserted': this.hasErrorPassAgain },
-                    { 'Password again is different': this.hasErrorPassAgainDiff },
-                ]">
+              <ValidationObserver ref="form" v-slot="{ handleSubmit }">
+                <!-- <form @submit.prevent="handleSubmit(onSubmit)"> -->
+                <ValidationProvider 
+                  rules="required|email" 
+                  vid="email"
+                  name="Email" 
+                  v-slot="{ errors }"
+                >
+                  <b-field
+                    label="Email"
+                    :type="{ 'is-danger': errors[0] }"
+                    :message="errors"
+                  >
+                    <b-input v-model="email"></b-input>
+                  </b-field>
+                </ValidationProvider>
 
-                <b-input v-model="againPassword" value='' type="password" placeholder="Password (again)" password-reveal @input='verifyPasswordAgain'></b-input>
-            </b-field>
+                <ValidationProvider 
+                  rules="required|numUser" 
+                  vid="username"
+                  name="Username" 
+                  v-slot="{ errors }"
+                >
+                  <b-field
+                    label="Username"
+                    :type="{ 'is-danger': errors[0] }"
+                    :message="errors"
+                  >
+                    <b-input v-model="username"></b-input>
+                  </b-field>
+                </ValidationProvider>
 
-            <b-button class="button-register" @click="register" rounded outlined expanded>Register</b-button>
+                <ValidationProvider
+                  rules="required|numPass"
+                  vid="password"
+                  name="Password"
+                  v-slot="{ errors }"
+                >
+                  <b-field
+                    label="Password"
+                    :type="{ 'is-danger': errors[0] }"
+                    :message="errors"
+                  >
+                    <b-input type="password" v-model="password"></b-input>
+                  </b-field>
+                </ValidationProvider>
 
+                <ValidationProvider
+                  rules="required|confirmed:password"
+                  name="Password Confirmation"
+                  v-slot="{ errors }"
+                >
+                  <b-field
+                    label="Confirm Password"
+                    :type="{ 'is-danger': errors[0] }"
+                    :message="errors"
+                  >
+                    <b-input type="password" v-model="confirmation"></b-input>
+                  </b-field>
+                </ValidationProvider>
+
+                <!-- <button type="submit">Sign up</button> -->
+                <div class="button-register">
+                  <!-- <b-button @click="passes(submit)" rounded outlined expanded>Register</b-button> -->
+                  <b-button @click="handleSubmit(onSubmit)" rounded outlined expanded>Register</b-button>
+                </div>
+        
+                <!-- </form> -->
+              </ValidationObserver>
             
+            </div>
+
             <div class="footer-text">
               Already have an account?
-              <a class="footer-link" href="http://cloud.shellhub.io/" >LINK</a>
+              <a class="footer-link" href="http://cloud.shellhub.io/" >LOGIN</a>
             </div>
 
           </div>
-
         </div>
-        
       </div>
-
 
     </div>
   </div>
@@ -64,82 +106,97 @@
 
 
 <script>
-  export default {
+
+import { ValidationObserver, ValidationProvider } from "vee-validate";
+
+export default {
+  name:'register',
+  components: {
+    ValidationObserver,
+    ValidationProvider
+  },
     data() {
       return {
-        hasErrorUserinserted: false,
-        hasErrorUserAvailable: false,
-        hasErrorUser: false,
-        hasErrorPass: false,
-        hasErrorPassAgain: false,
-        hasErrorPassAgainDiff: false,
+        email: '',
         username: '',
         password: '',
-        againPassword: ''
+        confirmation: "",
       }
     },
     methods: {
-      verifyUserName(){
-        this.hasErrorUser = false
-        this.hasErrorUserinserted = false
-      },
-      verifyPassword(){
-        this.hasErrorPass = false
-        this.hasErrorPassAgainDiff = false
-      },
-      verifyPasswordAgain(){
-        this.hasErrorPassAgain = false
-        this.hasErrorPassAgainDiff = false
-      },
-      
-      register() {
-        if (this.username == '') {
-          this.hasErrorUser = true
-          this.hasErrorUserinserted = true
-        }
-        if (this.password == '') {
-          this.hasErrorPass = true
-        }
-        if (this.againPassword == '') {
-          this.hasErrorPassAgain = true
-        }
-        if((this.againPassword != this.password) && (this.againPassword != '') ){
-          this.hasErrorPassAgainDiff = true
-        }
-
-
-        if((this.username != '') && (this.password != '') && (this.againPassword != '') && (this.password == this.againPassword)){
-          
-          // const headers = {
-          //   'Access-Control-Allow-Origin': '*',
-          //   'Content-Type': 'text/plain',
-          //   'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS',
-          // };
-          
-          this.axios
-            .post(process.env.GRIDSOME_API_URL,{
-              username: this.username,
-              password: this.password
+      onSubmit() {
+        this.axios
+          .post(process.env.GRIDSOME_API_URL,{
+            email: this.email,
+            username: this.username,
+            password: this.password
+          })
+          .then(response => {
+            this.$buefy.notification.open({
+              duration: 7000,
+                  message: 'Hi <b>'+ this.username +'</b>! <br> Your account has been successfully created. <br> You will be redirected to our system.',
+                  position: 'is-top-right',
             })
-            // {headers})
-            // { useCredentails: true })
-            .then(response => {
-              // console.log(response)
-              this.$buefy.dialog.alert({
-                message: 'Your account was created successfully',
-                confirmText: 'OK',
+            
+            var timer = setTimeout(function() {
+              // window.location=process.env.GRIDSOME_API_LOGIN
+              // window.location='https://cloud.shellhub.io/login'
+              window.location=`${location.protocol}//cloud.shellhub.io/login`
+            }, 7000);
+          })
+          .catch(error => {
+            if (error.response.status == 400){ // Invalid username and/or password
+              this.$refs.form.setErrors({
+                username: ['This username is not valid']
+              });
+            }
+            else if (error.response.status == 409){ // username already exists
 
-                type: 'is-success',
-              })
-            })
-            .catch(error => {
-              // console.log(error.response)
-              if (error.response.status == 409){
-                this.hasErrorUser = true
-                this.hasErrorUserAvailable = true
+              for (var prop in error.response.data) {
+
+                if (error.response.data[prop]['Field'] == 'username'){
+                  this.$refs.form.setErrors({
+                    username: ['This username is already taken']
+                  });
+                }
+                else if(error.response.data[prop]['Field'] == 'email'){
+                  this.$refs.form.setErrors({
+                    email: ['This email is already taken']
+                  });
+                }
+                else if(error.response.data[prop]['Field'] == 'password'){
+                  this.$refs.form.setErrors({
+                    password: ['This email is already taken']
+                  });
+                }
+                else{
+                  this.$buefy.notification.open({
+                    duration: 7000,
+                    message: 'Unknown Error',
+                    position: 'is-top-right',
+                    type: 'is-danger',
+                  })
+                }
               }
-          });          
-        }
+              if (! error.response.data){
+                this.$buefy.notification.open({
+                  duration: 7000,
+                  message: 'Unknown Error',
+                  position: 'is-top-right',
+                  type: 'is-danger',
+                })
+              }
+
+             }
+            else if(error.response.status == 500){ // Unknown Error
+              this.$buefy.notification.open({
+                duration: 7000,
+                message: 'Unknown Error',
+                position: 'is-top-right',
+                type: 'is-danger',
+              })
+            }
+          });
 
       }
     }
@@ -191,8 +248,12 @@
   display: flex;
 }
 
-.testess{
+.row-items{
   width: 455px;
+}
+
+.field{
+  height: 95px;
 }
 
 .new-account{
@@ -207,29 +268,36 @@
 }
 
 .button-register{
+  margin-top: 0px;
+}
+
+.button{
   color: #dce3ff;
   background-color: #394573;
 }
 
+
 .button:hover {
+  color: #dce3ff;
+}
+
+.button:focus {
   color: #dce3ff;
 }
 
 .input{
   color: #dce3ff;
   background-color: #394573;
-  margin-bottom: 10px;
 }
 
 .input::placeholder {
-    color: #dce3ff;
+  color: #dce3ff;
 }
 
 .footer-text{
   width: 100%;
   justify-content: center;
   align-items: center;
-  /* margin: auto; */
   display: flex;
   padding-top: 50px;
   color: #dce3ff;
@@ -238,10 +306,6 @@
 
 .footer-link{
   margin-left: 15px;
-}
-
-a:link {
-  text-decoration:none;
 }
 
 </style>

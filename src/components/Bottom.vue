@@ -27,7 +27,7 @@
         <div class="createdRight">
 
           <div class="textLink-created textLink">
-          Created-by
+            Created-by
           </div>
           <div class="textLink-OSSystems textLink">
             <a href="https://www.ossystems.com.br/" target="_blank">O.S.Systems</a>

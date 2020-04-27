@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'ShellHub',
+  titleTemplate: '%s',
   plugins: [
     {
       use: '@gridsome/source-filesystem',

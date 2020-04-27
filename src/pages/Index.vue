@@ -1,8 +1,6 @@
 <template>
-
   <Layout>
   </Layout>
-
 </template>
 
 <page-query>
@@ -20,8 +18,6 @@
 </page-query>
 
 <script>
-// import VueRouter from 'vue-router' // << aqui
-// Vue.use(VueRouter) // << e aqui
 
 </script>
 

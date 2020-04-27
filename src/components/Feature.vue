@@ -58,26 +58,15 @@
 
 </template>
 
-
 <script>
+
 export default {
-  data() {
-    return {
-      data: [
-        { 'id': 1, 'title': 'Secure Remote Connections', 'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies pharetra odio vitae.', },
-        { 'id': 2, 'title': 'Full IoT device management', 'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies pharetra odio vitae.', },
-        { 'id': 3, 'title': 'Batch release application', 'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies pharetra odio vitae.', },
-        { 'id': 4, 'title': 'Restrict access to login IP', 'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies pharetra odio vitae.', },
-        { 'id': 5, 'title': 'Software-only solution', 'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies pharetra odio vitae.', },
-        { 'id': 6, 'title': 'Customize API Access', 'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies pharetra odio vitae.', },
-      ],
-    }
-  }
-}
+  name: 'Feature',
+};
+
 </script>
 
 <style>
-
 
 .contentRectangle {
   max-width: 1170px;

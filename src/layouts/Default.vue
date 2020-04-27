@@ -10,19 +10,9 @@
 </template>
 
 <style>
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap');
-
-
-.two{
-    width: 100%;
-    /* height: 100%; */
-    /* margin: 30px auto 0 auto; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-}
 
 .Shellhub-LP-1280 {
   min-height: 2283px;
@@ -38,7 +28,6 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
   text-decoration: underline;
   display: inline-block;
-  /* font-family: RobotoSlab; */
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
   font-weight: normal;
@@ -50,7 +39,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .textLink{
-  /* font-family: RobotoSlab; */
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
   font-weight: normal;
@@ -69,8 +57,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .titleContent {
-  /* "Overpass Mono", sans-serif; */
-  /* font-family: Overpass; */
   font-family: 'Overpass Mono', monospace;
   font-size: 44px;
   font-weight: bold;
@@ -82,7 +68,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .textContent {
-  /* font-family: RobotoSlab; */
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
   font-weight: normal;
@@ -94,24 +79,12 @@ a:link, a:visited, a:hover, a:active {
   color: #ffffff;
 }
 
-
 .textContent-fontRetangle{
   width: 100%;
   height: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-/* a.rectangle:link, a.rectangle:visited, a.rectangle:hover, a.rectangle:active {
-  color: #dce3ff;
-  text-align: center;
-  text-decoration: underline;
-  display: inline-block;
-} */
-
-
 
 </style>

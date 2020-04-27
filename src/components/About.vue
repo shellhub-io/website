@@ -1,6 +1,5 @@
 <template>
   <div class="textura">
-    <!-- <div class="teste1"> -->
 
       <div class="scope">
         <div class="menu">
@@ -14,9 +13,6 @@
               <b-navbar-item class="textContent-vbarIten textContent" href="https://shellhub-io.github.io/" target="_blank">
                 Documentation
               </b-navbar-item>
-              <!-- <b-navbar-item class="textContent-vbarIten textContent">
-                <a href="https://www.ossystems.com.br/" target="_blank">O.S.Systems</a>
-                </b-navbar-item> -->
               <b-navbar-item class="textContent-vbarIten textContent" href="http://cloud.shellhub.io/">
                 Login
               </b-navbar-item>
@@ -64,30 +60,18 @@
 
       </div>
     </div>
-  <!-- </div> -->
+
 </template>
 
 <script>
-export default {
-  name: 'headers',
-  data() {
-    return {
 
-    };
-  },
-  methods: {
-    // clickMethod() {
-    //   console.log("AQUIIIIIIIII")
-    // },
-  },
+export default {
+  name: 'About',
 };
+
 </script>
 
 <style>
-
-/* .jucaa{
-  z-index: 999;
-} */
 
 .scope{
   width: 100%;
@@ -111,49 +95,16 @@ body{
   padding-top: 0px!important;
 }
 
-/* .teste{ */
-  /* max-width: 1600px; */
-  /* height: 771px;
-  background-image: url('../static/Nuvem_Shellhub_Completo.png');
-  background-repeat: no-repeat;
-  background-position: top right;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 0 auto; */
-  /* position: absolute; */
-  /* z-index: 88; */
-/* } */
-
-/* .teste1{ */
-  /* width: 100%; */
-  /* height: 771px; */
-  /* position: absolute; */
-  /* z-index: 2; */
-/* } */
-
-
 .textura {
-  /* z-index: 1; */
-  /* width: 1280px; */
   height: 771px;
-  /* background: #394573; */
-  /* background-image: url('../static/nuvem.png'), url('../static/forkme-dark-background.png'); */
-   /* background-image: url('../static/pattrn2-preto-pequeno.png'); */
-  /*background-repeat: no-repeat;
-  background-position: top right; */
 }
 
 .menu{
-  /* position:relative; */
-  /* position:absolute; */
   width: 100%;
   height: 100%;
   display: inline-block;
-  /* align-items: center; */
-  /* z-index: 4; */
 }
 
-/* change navbar background color */
 nav.navbar {
   z-index: 2;
   background: transparent;
@@ -236,27 +187,23 @@ nav.navbar {
   align-items: center;
 }
 
-
-
-/* ================================================================================= */
 #forkongithub a{
 	background:#e7e7e7;  
 	color: #000;
 	text-decoration:none;
-	/* font-family:arial,sans-serif; */
 	text-align:center;
 	font-weight:bold;
-  /* font-size: 10px; */
-	/* padding:5px 40px; */
 	font-size:.9rem;
 	line-height:2rem;
 	position:relative;
 	transition:0.5s;
 }
+
 #forkongithub a:hover{
 	background:#394573;
 	color:#cfcfcf;
 }
+
 #forkongithub a::before,#forkongithub a::after{
 	content:"";
 	width:100%;
@@ -267,10 +214,12 @@ nav.navbar {
 	height:1px;
 	background:#cfcfcf;
 }
+
 #forkongithub a::after{
 	bottom:1px;
 	top:auto;
 }
+
 @media screen and (min-width:149px){
 	#forkongithub{
 		position:absolute;
@@ -282,6 +231,7 @@ nav.navbar {
 		height:149px;
 		z-index:9999;
 	}
+
 	#forkongithub a{
 		width:260px;
 		position:absolute;

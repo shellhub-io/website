@@ -39,8 +39,12 @@
 </template>
 
 <script>
-</script>
 
+export default {
+  name: 'More',
+};
+
+</script>
 
 <style>
 
@@ -48,8 +52,8 @@
   max-width: 1170px;
   height: 450px;
   margin: auto;
-  
 }
+
 .moreCenter {
   width:100%;
   height:100%;

@@ -16,10 +16,7 @@
             </div>
 
             <div>
-
-
               <ValidationObserver ref="form" v-slot="{ handleSubmit }">
-                <!-- <form @submit.prevent="handleSubmit(onSubmit)"> -->
                 <ValidationProvider 
                   rules="required|email" 
                   vid="email"
@@ -79,13 +76,10 @@
                   </b-field>
                 </ValidationProvider>
 
-                <!-- <button type="submit">Sign up</button> -->
                 <div class="button-register">
-                  <!-- <b-button @click="passes(submit)" rounded outlined expanded>Register</b-button> -->
                   <b-button @click="handleSubmit(onSubmit)" rounded outlined expanded>Register</b-button>
                 </div>
         
-                <!-- </form> -->
               </ValidationObserver>
             
             </div>
@@ -139,8 +133,6 @@ export default {
             })
             
             var timer = setTimeout(function() {
-              // window.location=process.env.GRIDSOME_API_LOGIN
-              // window.location='https://cloud.shellhub.io/login'
               window.location=`${location.protocol}//cloud.shellhub.io/login`
             }, 7000);
           })
@@ -202,8 +194,6 @@ export default {
     }
   }
 </script>
-
-
 
 <style>
 .background{
@@ -275,7 +265,6 @@ export default {
   color: #dce3ff;
   background-color: #394573;
 }
-
 
 .button:hover {
   color: #dce3ff;

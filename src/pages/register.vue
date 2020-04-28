@@ -243,7 +243,7 @@ export default {
 }
 
 .field{
-  height: 95px;
+  min-height: 78px;
 }
 
 .new-account{

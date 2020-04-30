@@ -92,8 +92,30 @@
           </div>
         </div>
       </div>
-
     </div>
+    <section>
+    <b-modal :can-cancel="false" :active.sync="modalActive" :width="440" scroll="keep">
+            <div class="card">
+              <div class="modal-card" style="width: auto">
+                <div class="card-image">
+                    <figure>
+                        <img src="../static/success.png" class="center" alt="..." style="width: 200px">
+                    </figure>
+                </div>
+              </div>
+                <div class="card">
+                <div class="card-content">
+                    <div> 
+                        <div class="media-content">
+                            <p class="title is-6"> Your account has been successfully created!</p>
+                             <button onclick="location.href='http://cloud.shellhub.io/';" class="button is-primary">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </b-modal>
+    </section>
   </div>
 
 </template>
@@ -115,6 +137,7 @@ export default {
         username: '',
         password: '',
         confirmation: "",
+        modalActive:false,
       }
     },
     methods: {
@@ -126,16 +149,8 @@ export default {
             password: this.password
           })
           .then(response => {
-            this.$buefy.notification.open({
-              duration: 7000,
-                  message: 'Hi <b>'+ this.username +'</b>! <br> Your account has been successfully created. <br> You will be redirected to our system.',
-                  position: 'is-top-right',
+              this.modalActive=true;
             })
-            
-            var timer = setTimeout(function() {
-              window.location=`${location.protocol}//cloud.shellhub.io/login`
-            }, 7000);
-          })
           .catch(error => {
             if (error.response.status == 400){ // Invalid username and/or password
               this.$refs.form.setErrors({
@@ -243,7 +258,7 @@ export default {
 }
 
 .field{
-  min-height: 78px;
+  min-height: 95px;
 }
 
 .new-account{
@@ -295,6 +310,17 @@ export default {
 
 .footer-link{
   margin-left: 15px;
+}
+
+.media-content{
+  text-align: center;
+}
+
+.center{
+    display: block;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 </style>

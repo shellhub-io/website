@@ -14,6 +14,7 @@ import Router from 'vue-router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import "./vee-validate";
+import VueAnalytics from 'vue-analytics';
  
 Vue.use(Router)
 Vue.use(VueAxios, axios)

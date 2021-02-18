@@ -41,6 +41,10 @@ export const SectionCommunityStyle = styled.section`
         font-size: 1rem;
         color: #FFFFFF;
         margin-right: 1.625rem;
+        transition: background-color ease .3s;
+        &:hover {
+          background-color: #8299F5;
+        }
       }
     }
     .btn-github {
@@ -58,8 +62,24 @@ export const SectionCommunityStyle = styled.section`
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #667ACC;
+        transition: color .3s ease; 
         svg {
           margin-left: 1rem;
+          path {
+            transition: stroke .3s ease; 
+          }
+        }
+      }
+      &:hover {
+        span {
+          color: #8299F5;
+        }
+        span {
+          svg {
+            path {
+              stroke: #8299F5;
+            }
+          }
         }
       }
     }

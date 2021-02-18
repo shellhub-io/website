@@ -16,13 +16,13 @@ function Footer() {
       <FlashMenuStyle>
         <div className="container">
           <div className="main">
-            <Link  to="/documentation"className="item">
+            <a href="#" target="_blank" className="item">
               <Icon  url={<IconDocumentation/>}/>
               <div className="txt">
                 <h3>Documentation</h3>
                 <p>Follow our getting started guide and learn the inner workings of ShellHub</p>
               </div>
-            </Link>
+            </a>
             <Link to="/article" className="item">
               <Icon url={<IconArticle/>}/>
               <div className="txt">
@@ -48,10 +48,10 @@ function Footer() {
             </div>
             <div className="right">
               <ul>
-                <li><Link to="/">Get started</Link></li>
+                <li><Link to="/get-started">Get started</Link></li>
                 <li><Link to="/pricing">Pricing</Link></li>
                 <li><Link to="/community">Community</Link></li>
-                <li><Link to="/documentation">Documentation</Link></li>
+                <li><a href="#" target="_blank">Documentation</a></li>
                 <li><Link to="/article">Article</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
@@ -65,7 +65,7 @@ function Footer() {
             <p>©2020 Shellhub - All rights reserved</p>
             <div className="made">
               <span>Design by:</span>
-              <a href="">
+              <a href="https://insanydesign.com/" target="_blank">
                 <Insany/>
               </a>
             </div>

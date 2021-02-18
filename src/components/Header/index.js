@@ -18,7 +18,7 @@ const Header = () => {
                 <Link to="/community" activeClassName="active">Community</Link>
               </li>
               <li>
-                <Link to="/documentation" activeClassName="active">Documentation</Link>
+                <a href="" target="_blank">Documentation</a>
               </li>
               <li>
                 <Link to="/article" activeClassName="active">Article</Link>
@@ -30,7 +30,7 @@ const Header = () => {
                 <Link to="/contact" activeClassName="active">Contact</Link>
               </li>
             </ul>
-            <Link to="/" className="btn">Get started</Link>
+            <Link to="/get-started" className="btn" activeClassName="active">Get started</Link>
           </nav>
       </div>
     </HeaderStyle>

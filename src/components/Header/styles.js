@@ -47,7 +47,8 @@ export const HeaderStyle = styled.header`
       font-size: 0.9375rem;
       color: #FFFFFF;
       transition: all ease .3s;
-      &:hover {
+      &:hover,
+      &.active {
         background: ${props => props.theme.primaryBlue};
         color: #FFFFFF;
       }

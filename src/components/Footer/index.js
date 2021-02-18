@@ -62,7 +62,7 @@ function Footer() {
             </div>
           </div>
           <div className="copy">
-            <p>©2020 Shellhub - All rights reserved</p>
+            <p>©{new Date().getFullYear()} Shellhub - All rights reserved</p>
             <div className="made">
               <span>Design by:</span>
               <a href="https://insanydesign.com/" target="_blank">

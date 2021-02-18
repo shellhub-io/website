@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 import Line from '../../assets/line-column.png'
+import Bg from '../../assets/bg-pricing.png'
 
 export const SectionPricingStyle = styled.section`
   padding-top: 11.375rem;
   padding-bottom: 6.25rem;
+  background: url(${Bg}) no-repeat top center;
+  background-size: 100%;
   .title {
     margin-bottom: 4rem;
     h2 {

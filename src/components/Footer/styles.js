@@ -20,6 +20,10 @@ export const FlashMenuStyle = styled.section`
       background: ${props => props.theme.gradientDark};
       padding: 3.125rem 3.75rem;
       border-radius: 8px;
+      transition: background-color ease .3s;
+      &:hover {
+        background: ${props => props.theme.gradientHover}
+      }
       ${IconStyle} {
         margin-left: 0px;
         margin-right: 1.8125rem;

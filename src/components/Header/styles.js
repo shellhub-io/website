@@ -30,6 +30,9 @@ export const HeaderStyle = styled.header`
           font-size: 0.9375rem;
           color: ${props => props.theme.secondGray};
           transition: color ease .3s;
+          &.active {
+            color: #8299F5;
+          }
           &:hover {
             color: #FFFFFF;
           }

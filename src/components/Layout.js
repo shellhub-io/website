@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import GlobalStyles from '../styles/global';
 
+import 'antd/dist/antd.css'
+
 import Header from './Header'
 import Footer from './Footer'
 

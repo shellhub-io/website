@@ -34,6 +34,15 @@ const GlobalStyle = createGlobalStyle`
   body {
     background : ${props => props.theme.background}
   }
+
+  ul,
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
 `;
  
 export default GlobalStyle;

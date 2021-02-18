@@ -15,19 +15,19 @@ const Header = () => {
         <nav>
             <ul>
               <li>
-                <Link to="/community">Community</Link>
+                <Link to="/community" activeClassName="active">Community</Link>
               </li>
               <li>
-                <Link to="/documentation">Documentation</Link>
+                <Link to="/documentation" activeClassName="active">Documentation</Link>
               </li>
               <li>
-                <Link to="/article">Article</Link>
+                <Link to="/article" activeClassName="active">Article</Link>
               </li>
               <li>
-                <Link to="/pricing">Pricing</Link>
+                <Link to="/pricing" activeClassName="active">Pricing</Link>
               </li>
               <li>
-                <Link to="/pricing">Contact</Link>
+                <Link to="/contact" activeClassName="active">Contact</Link>
               </li>
             </ul>
             <Link to="/" className="btn">Get started</Link>

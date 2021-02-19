@@ -63,6 +63,7 @@ export const SectionHeroStyle = styled.section`
       align-items: flex-start;
     }
     .text {
+      margin: 0 auto;
       h1 {
         text-align: center;
         font-size: 2.5rem;
@@ -318,10 +319,11 @@ export const SectionFeaturesStyle = styled.section`
       }
     }
   }
-  @media(max-width: 1200px) {
+  @media(max-width: 560px) {
     h2 {
       font-size: 1.75rem;
       margin-bottom: 20px;
+      text-align: center;
     }
     .all {
       grid-template-columns: 1fr;

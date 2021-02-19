@@ -119,8 +119,9 @@ export default function pagePricing() {
           </div>
           <div className="all">
             {
-              articles.map(({logo, title, date, description, url}) => 
+              articles.map(({logo, title, date, description, url}, index) => 
                 <Card 
+                  key={index}
                   logo={logo}
                   title={title}
                   date={date}

@@ -28,4 +28,23 @@ export const SectionArticleStyle = styled.section`
     align-items: flex-start;
     grid-gap: 24px 33px;
   }
+  @media(max-width: 560px) {
+    padding-top: 129px;
+    padding-bottom: 40px;
+    .top {
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 0.875rem;
+      }
+    }
+    .all {
+      grid-template-columns: 1fr;
+    }
+  }
 `;

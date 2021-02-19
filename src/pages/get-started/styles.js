@@ -102,4 +102,35 @@ export const SectionGetStartedStyle = styled.section`
       }
     }
   }
+  @media(max-width: 560px) {
+    padding-top: 130px;
+    padding-bottom: 40px;
+    .title {
+      margin-bottom: 2.5rem;
+      h1 {
+        font-size: 1.125rem;
+      }
+      h2 {
+        font-size: 2rem;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 314px;
+      }
+    }
+    .all {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      .card {
+        height: auto;
+        padding: 2.5rem 1.875rem;
+        a {
+          padding: 0px 30px;
+        }
+        p {
+          height: auto;
+        }
+      }
+    }
+  }
 `;

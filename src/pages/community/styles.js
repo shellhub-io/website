@@ -90,6 +90,44 @@ export const SectionCommunityStyle = styled.section`
     right: -110px;
     pointer-events: none;
   }
+  @media(max-width: 560px) {
+    overflow-x: hidden;
+    .text {
+      padding-top: 123px;
+      max-width: 100%;
+      padding-bottom: 0;
+      h1 {
+        text-align: center;
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 25px;
+      }
+      .btns {
+        justify-content: center;
+        margin-bottom: 50px;
+        a {
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+      }
+      .btn-github {
+        justify-content: center;
+      }
+    }
+    .image {
+      position: relative;
+      right: 0;
+      max-width: 430px;
+      left: 50%;
+      margin-left: -215px;
+    }
+  }
 `;
 
 export const SectionOpenSourceStyle = styled.section`
@@ -155,6 +193,43 @@ export const SectionOpenSourceStyle = styled.section`
         font-size: 1rem;
         line-height: 140%;
         color: #ABC2CF;
+      }
+    }
+  }
+  @media(max-width: 560px) {
+    padding-bottom: 40px;
+    .all {
+      grid-template-columns: 1fr;
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 40px;
+        h3 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          font-size: 0.9375rem;
+        }
+      }
+    }
+    .top {
+      flex-direction: column;
+      align-items: center;
+      .left {
+        h2 {
+          font-size: 1.75rem;
+          line-height: 130%;
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+        }
+        p {
+          text-align: center;
+          margin-bottom: 20px;
+        }
       }
     }
   }

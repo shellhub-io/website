@@ -132,4 +132,52 @@ export const SectionContactStyle = styled.section`
       }
     }
   }
+  @media(max-width: 560px) {
+    padding-top: 100px;
+    padding-bottom: 2.5rem;
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .left {
+      margin-bottom: 2.9375rem;
+      .text {
+        h1 {
+          text-align: center;
+          font-size: 2.25rem;
+          line-height: 3.375rem;
+          margin-bottom: 0.5625rem;
+        }
+        p {
+          text-align: center;
+          max-width: 276px;
+          font-size: 0.875rem;
+        }
+      }
+      .image {
+        display: none;
+      }
+    }
+    .box-form  {
+      height: auto;
+      padding: 40px 15px;
+      h2 {
+        text-align: center;
+        max-width: 271px;
+        margin: 0 auto;
+        margin-bottom: 0.75rem;
+      }
+      p {
+        text-align: center;
+        font-size: 14px;
+      }
+      form {
+        .form-group {
+          input[type="submit"] {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 `;

@@ -56,4 +56,13 @@ export const CardArticleStyle = styled.a`
       transition: transform ease .3s;
     }
   }
+  @media(max-width: 560px) {
+    height: auto;
+    padding: 40px 30px;
+    h3 {
+      font-size: 1rem;
+      height: auto;
+      max-width: 250px;
+    }
+  }
 `;

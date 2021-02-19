@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from  '../../components/Layout'
 import SEO from '../../components/Seo'
 
@@ -92,6 +93,165 @@ export default function pagePricing() {
                   </div>
                 </div>
               </div>
+              <div className="info-geral-mobile">
+                <div>
+                  <div className="item">
+                    <h3>Price</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong>Free</strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>$ 3,00 (device/month)</strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Host anywhere</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Secure remote communication</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Suitable for any infrastructure</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Documentation and Technical Support</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Admin console</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Fully managed</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Managing Firewall Rules</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Session record and playback</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Firewall for filtering SSH connections</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                  <h3>SSL traffic encryption</h3>
+                  <ul>
+                    <li>
+                      <span>Community</span>
+                      <strong></strong>
+                    </li>
+                    <li>
+                      <span>Enterprise</span>
+                      <strong><CheckedItemPlan/></strong>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+                <div className="cards">
+                  <div className="card">
+                    <h3>Community plan</h3>
+                    <p>Designed for engineers who prefer Do-it-yourself projects</p>
+                    <Link to="/get-started">Get Started</Link>
+                  </div>
+                  <div className="card">
+                    <h3>Enterprise plan</h3>
+                    <p>Designed for engineers who prefer Do-it-yourself projects</p>
+                    <Link to="/">Get in touch</Link>
+                  </div>
+                </div>
+              </div>
             </TabPane>
             <TabPane tab={<span>Cloud <strong>Beta</strong></span>} key="cloud">
               <div className="info-geral">
@@ -135,6 +295,104 @@ export default function pagePricing() {
                     <div className="text">
                       <a href="" className="btn">Get Started</a>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div className="info-geral-mobile">
+                <div>
+                  <div className="item">
+                    <h3>Price</h3>
+                    <ul>
+                      <li>
+                        <strong>$ 3,00 (device/month)</strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Host anywhere</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Secure remote communication</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Suitable for any infrastructure</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Documentation and Technical Support</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Admin console</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Fully managed</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Managing Firewall Rules</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Session record and playback</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Firewall for filtering SSH connections</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>SSL traffic encryption</h3>
+                    <ul>
+                      <li>
+                        <strong><CheckedItemPlan/></strong>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="cards">
+                  <div className="card">
+                    <p>Design for engineering teams that require the simplicity of a hosted and managed service. We are on the Beta version. New features will be added soon.	</p>
+                    <Link to="/get-started">Get Started</Link>
                   </div>
                 </div>
               </div>

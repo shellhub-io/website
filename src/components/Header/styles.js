@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,6 +11,9 @@ export const HeaderStyle = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .logo {
+    z-index: 1;
   }
   nav {
     display: flex;
@@ -52,6 +55,20 @@ export const HeaderStyle = styled.header`
         background: ${props => props.theme.primaryBlue};
         color: #FFFFFF;
       }
+    }
+  }
+  @media(max-width: 560px) {
+    padding: 1.8125rem 0px;
+    background-color: #272B33;
+    height: 93px;
+    .logo {
+      max-width: 156px;
+      svg {
+        width: 100%;
+      }
+    }
+    nav {
+      display:none;
     }
   }
 `;

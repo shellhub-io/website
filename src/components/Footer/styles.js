@@ -46,6 +46,33 @@ export const FlashMenuStyle = styled.section`
         }
       }
     }
+    @media(max-width: 560px) {
+      .main {
+        padding-top: 50px;
+        grid-template-columns: 1fr;
+        grid-gap: 14px;
+       
+      }
+      a {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        ${IconStyle} {
+          margin-right: 0;
+        }
+        .txt{
+          h3 {
+            text-align: center;
+            font-size: 1.125rem;
+            margin: 8px 0px;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
 `;
 
 export const FooterStyle = styled.footer`
@@ -153,6 +180,49 @@ export const FooterStyle = styled.footer`
         letter-spacing: 0.5px;
         color: #DCE3FF;
         margin-right: 0.75rem;
+      }
+    }
+  }
+  @media(max-width: 560px) {
+    border-top: 1px solid rgb(55 67 109 / 0.3);
+    .main {
+      flex-direction: column;
+      align-items: center;
+      .left {
+        ul {
+          margin: 0 auto;
+          margin-top: 54px;
+        }
+      }
+      .right {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        ul {
+          margin-bottom: 30px;
+          grid-gap: 30px;
+          padding-left: 20px;
+        }
+        .text {
+          h3 {
+            text-align: center;
+            font-size: 1.125rem;
+            margin-bottom: 1.875rem;
+          }
+          a {
+            margin: 0 auto;
+            display: table;
+          }
+        }
+      }
+    }
+    .copy {
+      padding-top: 30px;
+      flex-direction: column;
+      align-items: center;
+      p {
+        margin-bottom: 20px;
       }
     }
   }

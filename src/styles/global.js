@@ -30,6 +30,9 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1246px;
     margin: 0 auto;
     padding: 0px 0.9375rem;
+    @media(max-width: 1200px) {
+      max-width: 100%;
+    }
   }
   body {
     background : ${props => props.theme.background}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "gatsby"
 
 import MenuMobile from '../../components/MenuMobile'
@@ -7,9 +7,9 @@ import { HeaderStyle } from './styles'
 
 import Logo from '../../assets/logo.svg'
 
-const Header = () => {
+const Header = ({fixed}) => {
   return (
-    <HeaderStyle>
+    <HeaderStyle className={fixed && 'fixed'}>
       <div className="container">
         <Link to="/"  className="logo">
           <Logo/>
@@ -20,7 +20,7 @@ const Header = () => {
               <Link to="/community" activeClassName="active">Community</Link>
             </li>
             <li>
-              <a href="" target="_blank">Documentation</a>
+              <a href="https://docs.shellhub.io/" target="_blank">Documentation</a>
             </li>
             <li>
               <Link to="/article" activeClassName="active">Article</Link>

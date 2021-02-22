@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <p>Host your own instance of ShellHub and count on the freedom to adapt it to your needs. </p>
             <span>Check the ShellHub installation guide and start right now!</span>
-            <Link  to="/">Get started</Link>
+            <a  href="https://docs.shellhub.io/" target="_blank">Get started</a>
             <strong>Looking for more options <Arrow/></strong>
           </div>
           <div className="card">
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
             <p>Access all benefits of ShellHub on a cloud-hosted service for your convenience.</p>
             <span>Register yourself and start it for free.</span>
-            <Link  to="/">Try cloud preview for free</Link>
+            <a  href="https://www.shellhub.io/register" target="_blank">Try cloud preview for free</a>
           </div>
           <div className="card">
             <div className="title-card">

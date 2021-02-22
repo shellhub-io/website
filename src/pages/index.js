@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 
 import Layout from  '../components/Layout'
 import SEO from '../components/Seo'
@@ -29,7 +30,7 @@ export default function Home() {
           <TitleStyle>Lorem Ipsum</TitleStyle>
           <h1>Get seamless remote access to any Linux device</h1>
           <p>Lorem Ipsum is simply dummy text of the printing and industry lorem Ipsum has been the</p>
-          <a href="">Free trial</a>
+          <Link to="/get-started">Free trial</Link>
         </div>
         <img src={IlustraHero} className='hero' alt="Ilustration Hero"/>
       </div>
@@ -95,7 +96,7 @@ export default function Home() {
           <p>Every successful software is adapted to its users needs. The best way to adapt the software forits users needs is allowing its users to directly influence its development and direction, thusopen-sourcing ShellHub was the obvious choice.</p>
           <p>We believe the future is Open Source and wecount on you to join us in this journey.</p>
 
-          <a href="">
+          <a href="https://github.com/shellhub-io/shellhub" target="_blank">
             <div className="txt">
               <Github/>
               <strong>Join the thousands of developers who are creating thebest remote access platform on</strong>

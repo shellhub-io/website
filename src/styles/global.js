@@ -35,7 +35,22 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   body {
-    background : ${props => props.theme.background}
+    background : ${props => props.theme.background};
+    overflow-x: hidden;
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #667ACC;
+    }
   }
 
   ul,

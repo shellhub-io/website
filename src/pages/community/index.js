@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link }  from 'gatsby'
 import Layout from  '../../components/Layout'
 import SEO from '../../components/Seo'
+import GitHubButton from 'react-github-button';
 
 import { SectionCommunityStyle, SectionOpenSourceStyle } from './styles'
 
@@ -21,10 +23,12 @@ export default function pageCommunity() {
             <h1>Community</h1>
             <p>Thousands of people are engaged in the amazing Open Source World. Free to create, change, and share your ideas!  Join us on this journey! The future is Open Source.</p>
             <div className="btns">
-              <a href="">Star 28.9k</a>
-              <a href="">Fork 6.3k</a>
+
+
+              <a href="https://github.com/shellhub-io/shellhub/stargazers/" target="_blank">Star</a>
+              <a href="https://github.com/shellhub-io/shellhub/network" target="_blank">Fork</a>
             </div>
-            <a href="" className="btn-github">
+            <a href="https://github.com/shellhub-io" target="_blank" className="btn-github">
               <GitHub/>
               <span>Open on GitHub <Arrow/></span>
             </a>
@@ -40,7 +44,7 @@ export default function pageCommunity() {
               <h2>The Open Source benefits</h2>
               <p>Open Source developers' skills and vision diversity are essential to maintain ShellHub code and product quality.</p>
             </div>
-            <a href="">Try shellhub</a>
+            <Link to="/get-started">Try shellhub</Link>
           </div>
           <div className="all">
             <div className="card">

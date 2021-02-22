@@ -16,7 +16,7 @@ function Footer() {
       <FlashMenuStyle>
         <div className="container">
           <div className="main">
-            <a href="#" target="_blank" className="item">
+            <a href="https://docs.shellhub.io/" target="_blank" className="item">
               <Icon  url={<IconDocumentation/>}/>
               <div className="txt">
                 <h3>Documentation</h3>
@@ -51,13 +51,13 @@ function Footer() {
                 <li><Link to="/get-started">Get started</Link></li>
                 <li><Link to="/pricing">Pricing</Link></li>
                 <li><Link to="/community">Community</Link></li>
-                <li><a href="#" target="_blank">Documentation</a></li>
+                <li><a href="https://docs.shellhub.io/" target="_blank">Documentation</a></li>
                 <li><Link to="/article">Article</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
               <div className="text">
                 <h3>Get seamless remote access to any Linux device</h3>
-                <a href="">Free trial</a>
+                <Link to="/get-started">Free trial</Link>
               </div>
             </div>
           </div>

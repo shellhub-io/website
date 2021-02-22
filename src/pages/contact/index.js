@@ -1,18 +1,59 @@
 import React, { useState} from "react"
 
+import { useForm } from "react-hook-form";
+
 import Layout from  '../../components/Layout'
 import SEO from '../../components/Seo'
+import Modal from  '../../components/Modal'
 
 import { SectionContactStyle } from './styles'
 
 import IlustraContact from '../../assets/ilustra-contact.png'
+import IconEnvelope from '../../assets/icon-envelope.svg'
+import IconEnvelopeError from '../../assets/envelope-error.svg'
 
 export default function Home() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [select, setSelect] = useState('')
-  const [device, setDevice] = useState('')
-  const [message, setMessage] = useState('')
+  const [modalSuccess, setModalSuccess] = useState(false)
+  const [modalError, setModalError] = useState(false)
+ 
+
+  const { register, handleSubmit, errors } = useForm()
+
+  function handleCloseModal() {
+    setModalSuccess(false)
+    setModalError(false)
+  }
+
+  function onSubmit(data) {
+    setModalSuccess(true);
+    
+    console.log(data);
+
+    fetch('https://mail.updatehub.io/contact', {
+      method : 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        "name" : `${data.name}`,
+        "email" : `${data.email}`,
+        "extra_fields" : { 
+          "subject_matter" : `${data.subjectMatter}`,
+          "device_number"  : `${data.numberDevice}`
+        },
+        "message" : `${data.message}`
+      })
+    })
+    .then(res => res.json())
+    .then((json) => {
+      setModalSuccess(true)
+    })
+    .catch (function (error) {
+        setModalError(true)
+        console.log('Request failed', error);
+    });
+  }
 
   return <Layout>
     <SEO title="Get in touch" description="Please provide us with your information and how we can help you, and our team will get back to you with the information your need." lang="en" />
@@ -28,51 +69,64 @@ export default function Home() {
         <div className="box-form">
           <h2>Looking for further information or any help?</h2>
           <p>You can use the form below to contact us.</p>
-          <form action="">
+          <form action="" onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
               <label htmlFor="">Full name</label>
               <input 
                 type="text" 
                 placeholder="Your name"
-                value={name}
-                onChange={({target}) => setName(target.value)}
+                name="name"
+                ref={register({ required : true, minLength: 2 })}
               />
+              { 
+                errors.name && errors.name.type === "required" && <p className="error">Name is required</p> 
+              }
+              { 
+                errors.name && errors.name.type === "minLength" && <p className="error">This is field required min lenght of 2</p> 
+              }
             </div>
             <div className="form-group">
               <label htmlFor="">E-mail</label>
               <input 
                 type="email" 
+                name="email"
                 placeholder="Type your e-mail"
-                value={email}
-                onChange={({target}) => setEmail(target.value)}
+                ref={register({ required : true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g })}
               />
+              { 
+                errors.email && errors.email.type === "required" && <p className="error">E-mail is required</p> 
+              }
+              { 
+                errors.email && errors.email.type === "pattern" && <p className="error">E-mail is invalid</p> 
+              }
             </div>
             <div className="form-group">
               <label htmlFor="">Subject matter</label>
               <select 
-                name="" 
-                id=""
-                value={select} 
-                onChange={({ target }) => setSelect(target.value)}
+                name="subjectMatter"
+                ref={register({ required : true })}
               >
-                <option value="" disabled>Get a quote</option>
+                <option value="">Get a quote</option>
                 <option value="opt-01">option  01</option>
                 <option value="opt-02">option  02</option>
               </select>
+              { errors.subjectMatter && <p className="error">Select an option</p> }
               <input 
                 type="text" 
+                name="numberDevice"
                 placeholder="Inform the number of devices and plan of interest" 
                 className="input-interest"
-                value={device}
-                onChange={({target}) => setDevice(target.value)}
+                ref={register({ required : true })}
               />
+              { errors.numberDevice && <p className="error">Number of device is required</p> }
             </div>
             <div className="form-group">
               <textarea 
                 placeholder="How can we help you:"
-                value={message}
-                onChange={({target}) => setMessage(target.value)}
+                name="message"
+                ref={register({ required : true })}
               ></textarea>
+              { errors.message && <p className="error">Message is required</p> }
             </div>
             <div className="form-group">
               <input type="submit" value="Send Message"/>
@@ -81,5 +135,26 @@ export default function Home() {
         </div>
       </div>
     </SectionContactStyle>
+
+    {
+      modalSuccess && 
+      <Modal
+        icon={<IconEnvelope/>}
+        title="Message sent successfully"
+        text="Thank you for your contact, soon we will contact you"
+        click={handleCloseModal}
+      />
+    }
+
+    {
+      modalError &&   
+      <Modal
+        icon={<IconEnvelopeError/>}
+        title="Couldn't send message"
+        text="There was an error and it was not possible to send your message."
+        click={handleCloseModal}
+      />
+    }
+    
   </Layout>
 }

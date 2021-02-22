@@ -39,7 +39,7 @@ export const SectionContactStyle = styled.section`
     border-radius: 8px;
     width: 100%;
     max-width: 480px;
-    height: 757px;
+    height: auto;
     background-color: #fff;
     padding: 50px 66px;
     h2 {
@@ -56,6 +56,12 @@ export const SectionContactStyle = styled.section`
       font-size: 1rem;
       line-height: 140%;
       color: #677379;
+    }
+    .error {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: red;
+      margin-top: 5px;
     }
     form {
       margin-top: 1.6875rem;
@@ -88,6 +94,7 @@ export const SectionContactStyle = styled.section`
           font-size: 0.875rem;
           &.input-interest {
             font-size: 0.75rem;
+            margin-top: 0.5rem;
           }
           &::placeholder {
             color: #677379;
@@ -111,7 +118,6 @@ export const SectionContactStyle = styled.section`
           line-height: 140%;
           color: #677379;
           font-size: 0.875rem;
-          margin-bottom: 0.5rem;
         }
         input[type="submit"] {
           width: 177px;

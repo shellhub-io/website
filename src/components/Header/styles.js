@@ -7,6 +7,11 @@ export const HeaderStyle = styled.header`
   width: 100%;
   padding: 3rem 0px;
   z-index: 10;
+  transition: all ease .3s;
+  &.fixed {
+    background-color: #272B33;
+    padding: 1rem 0;
+  }
   .container {
     display: flex;
     align-items: center;

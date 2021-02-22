@@ -6,7 +6,7 @@ import Arrow from '../../assets/arrow-md.svg'
 
 export default function CardArticle({logo, title, date, description, url}) {
   return (
-    <CardArticleStyle href={url}>
+    <CardArticleStyle href={url} target="_blank">
       <div className="logo">
         <img src={logo} alt={title}/>
       </div>

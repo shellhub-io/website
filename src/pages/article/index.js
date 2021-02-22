@@ -16,7 +16,7 @@ import GoLang from '../../assets/golang.png'
 import Alternative from '../../assets/alternative.png'
 import Code from '../../assets/code.png'
 import Programmer from '../../assets/ProgrammerSought.png'
-import Facebook from '../../assets/facebook.png'
+import HackerNews from '../../assets/hacker-news.png'
 import Bypass from '../../assets/bypass.png'
 
 const articles = [
@@ -66,7 +66,7 @@ const articles = [
     logo : `${GoLang}`,
     title : 'ShellHub enables teams to easily access any Linux device behind firewall...',
     date: '29/01/200',
-    description: 'hellHub is a modern SSH server for remotely accessing Linux devices via command...',
+    description: 'ShellHub is a modern SSH server for remotely accessing Linux devices via command...',
     url: 'https://golangexample.com/shellhub-enables-teams-to-easily-access-any-linux-device-behind-firewall-and-nat/'
   },
   {
@@ -91,7 +91,7 @@ const articles = [
     url: 'https://www.programmersought.com/article/14115272786/'
   },
   {
-    logo : `${Facebook}`,
+    logo : `${HackerNews}`,
     title : 'ShellHub permite que as equipas acedam facilmente a qualquer dispositivo...',
     date: '27/01/20',
     description: 'ShellHub enables teams to easily access any Linux device behind firewall and NAT :',

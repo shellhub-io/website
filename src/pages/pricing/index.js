@@ -88,7 +88,7 @@ export default function pagePricing() {
                     </div>
                     <div className="text">
                       <p>Designed for engineering teams with enterprises grade needs</p>
-                      <Link to="/get-started" className="btn">Get in touch</Link>
+                      <Link to="/contact" className="btn">Get in touch</Link>
                     </div>
                   </div>
                 </div>
@@ -248,7 +248,7 @@ export default function pagePricing() {
                   <div className="card">
                     <h3>Enterprise plan</h3>
                     <p>Designed for engineers who prefer Do-it-yourself projects</p>
-                    <Link to="/get-started" className="btn">Get in touch</Link>
+                    <Link to="/contact" className="btn">Get in touch</Link>
                   </div>
                 </div>
               </div>

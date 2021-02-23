@@ -24,7 +24,7 @@ export const SectionCommunityStyle = styled.section`
       font-weight: 300;
       font-size: 1rem;
       line-height: 140%;
-      color: #ABC2CF;
+      color: ${props => props.theme.secondGray};
       margin-bottom: 2rem;
     }
     .btns {
@@ -35,7 +35,7 @@ export const SectionCommunityStyle = styled.section`
         display: inline-block;
         line-height: 50px;
         padding: 0px 2rem;
-        background-color: #667ACC;
+        background-color: ${props => props.theme.primaryBlue};
         border-radius: 300px;
         font-weight: bold;
         font-size: 1rem;
@@ -61,7 +61,7 @@ export const SectionCommunityStyle = styled.section`
         font-size: 1.125rem;
         line-height: 150%;
         letter-spacing: 0.02em;
-        color: #667ACC;
+        color: ${props => props.theme.primaryBlue};
         transition: color .3s ease; 
         svg {
           margin-left: 1rem;
@@ -149,14 +149,14 @@ export const SectionOpenSourceStyle = styled.section`
         font-weight: 300;
         font-size: 1rem;
         line-height: 140%;
-        color: #ABC2CF;
+        color: ${props => props.theme.secondGray};
       }
     }
     a {
       display: inline-block;
       line-height: 50px;
       padding: 0px 60px;
-      background: #667ACC;
+      background: ${props => props.theme.primaryBlue};
       border-radius: 300px;
       font-weight: bold;
       font-size: 1rem;
@@ -192,7 +192,7 @@ export const SectionOpenSourceStyle = styled.section`
         font-weight: 300;
         font-size: 1rem;
         line-height: 140%;
-        color: #ABC2CF;
+        color: ${props => props.theme.secondGray};
       }
     }
   }

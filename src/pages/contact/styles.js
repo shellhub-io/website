@@ -23,7 +23,7 @@ export const SectionContactStyle = styled.section`
         font-size: 1.125rem;
         line-height: 150%;
         letter-spacing: 0.02em;
-        color: #ABC2CF;
+        color: ${props => props.theme.secondGray};
         max-width: 479px;
       }
     }
@@ -55,7 +55,7 @@ export const SectionContactStyle = styled.section`
       font-weight: 300;
       font-size: 1rem;
       line-height: 140%;
-      color: #677379;
+      color: ${props => props.theme.primaryGray};
     }
     .error {
       font-size: 0.9rem;
@@ -77,7 +77,7 @@ export const SectionContactStyle = styled.section`
           font-weight: 500;
           font-size: 0.875rem;
           line-height: 140%;
-          color: #677379;
+          color: ${props => props.theme.primaryGray};
           margin-bottom: 0.25rem;
         }
         input[type="text"],
@@ -85,19 +85,19 @@ export const SectionContactStyle = styled.section`
         textarea {
           width: 100%;
           height: 48px;
-          border: 1px solid #DCE3FF;
+          border: 1px solid ${props => props.theme.secondBlue};
           border-radius: 4px;
           padding: 0px 1rem;
           font-size: 0.875rem;
           line-height: 140%;
-          color: #667ACC;
+          color: ${props => props.theme.primaryBlue};
           font-size: 0.875rem;
           &.input-interest {
             font-size: 0.75rem;
             margin-top: 0.5rem;
           }
           &::placeholder {
-            color: #677379;
+            color: ${props => props.theme.primaryGray};
             font-weight: 400;
           }
         }
@@ -110,20 +110,20 @@ export const SectionContactStyle = styled.section`
           appearance: none;
           width: 100%;
           height: 48px;
-          border: 1px solid #DCE3FF;
+          border: 1px solid ${props => props.theme.secondBlue};
           background: url(${ArrowSelect}) no-repeat right 1rem center;
           border-radius: 4px;
           padding: 0px 1rem;
           font-size: 0.875rem;
           line-height: 140%;
-          color: #677379;
+          color: ${props => props.theme.primaryGray};
           font-size: 0.875rem;
         }
         input[type="submit"] {
           width: 177px;
           height: 46px;
           padding: 0px 2rem;
-          background-color: #667ACC;
+          background-color: ${props => props.theme.primaryBlue};
           border-radius: 300px;
           font-weight: bold;
           font-size: 1rem;

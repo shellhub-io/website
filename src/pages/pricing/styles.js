@@ -97,9 +97,9 @@ export const SectionPricingStyle = styled.section`
         &.ant-tabs-tab-active {
           .ant-tabs-tab-btn  {
             span {
-              color: #667ACC;
+              color: ${props => props.theme.primaryBlue};
               strong {
-                background-color: #667ACC;
+                background-color: ${props => props.theme.primaryBlue};
               }
             }
           }
@@ -110,7 +110,7 @@ export const SectionPricingStyle = styled.section`
             font-size: 1.375rem;
             line-height: 140%;
             letter-spacing: 0.01em;
-            color: #DCE3FF;
+            color: ${props => props.theme.secondBlue};
             display: flex;
             align-items: center;
             transition: color ease .3s;
@@ -119,8 +119,8 @@ export const SectionPricingStyle = styled.section`
               font-weight: 600;
               line-height: 1.6875rem;
               font-size: 0.875rem;
-              color: #272B33;
-              background-color: #DCE3FF;
+              color: ${props => props.theme.background};
+              background-color: ${props => props.theme.secondBlue};
               border-radius: 16px;
               padding: 0px 10px;
               margin-left: 11px;
@@ -131,7 +131,7 @@ export const SectionPricingStyle = styled.section`
       }
     }
     .ant-tabs-ink-bar {
-      background-color: #667ACC;
+      background-color: ${props => props.theme.primaryBlue};
     }
     .info-geral {
       position: relative;
@@ -192,7 +192,7 @@ export const SectionPricingStyle = styled.section`
               line-height: 140%;
               text-align: center;
               letter-spacing: 0.01em;
-              color: #ABC2CF;
+              color: ${props => props.theme.secondGray};
               font-weight: normal;
             }
             ul {
@@ -218,12 +218,12 @@ export const SectionPricingStyle = styled.section`
               font-size: 0.875rem;
               line-height: 140%;
               text-align: center;
-              color: #ABC2CF;
+              color: ${props => props.theme.secondGray};
               margin-bottom: 1.9375rem;
             }
             a {
               line-height: 3.375rem;
-              background: #667ACC;
+              background: ${props => props.theme.primaryBlue};
               border-radius: 300px;
               padding: 0px 40px;
               font-weight: bold;
@@ -242,7 +242,7 @@ export const SectionPricingStyle = styled.section`
         font-weight: 300;
         font-size: 0.875rem;
         line-height: 140%;
-        color: #DCE3FF;
+        color: ${props => props.theme.secondBlue};
         max-width: 599px;
       }
     }
@@ -280,7 +280,7 @@ export const SectionPricingStyle = styled.section`
               line-height: 140%;
               text-align: center;
               letter-spacing: 0.01em;
-              color: #ABC2CF;
+              color: ${props => props.theme.secondGray};
               opacity: 0.5;
               margin-bottom: 8px;
             }
@@ -325,13 +325,13 @@ export const SectionPricingStyle = styled.section`
             font-size: 0.875rem;
             line-height: 140%;
             text-align: center;
-            color: #ABC2CF;
+            color: ${props => props.theme.secondGray};
             max-width: 267px;
           }
           a {
             display: inline-block;
             line-height: 54px;
-            background-color: #667ACC;
+            background-color: ${props => props.theme.primaryBlue};
             border-radius: 300px;
             padding: 0px 2.5rem;
             font-weight: bold;

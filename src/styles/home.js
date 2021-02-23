@@ -315,7 +315,7 @@ export const SectionFeaturesStyle = styled.section`
         font-weight: 300;
         font-size: 1rem;
         line-height: 140%;
-        color: #ABC2CF;
+        color: ${props => props.theme.secondGray};
       }
     }
   }

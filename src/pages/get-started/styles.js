@@ -51,7 +51,7 @@ export const SectionGetStartedStyle = styled.section`
           font-weight: 300;
           font-size: 1rem;
           line-height: 140%;
-          color: #ABC2CF;
+          color: ${props => props.theme.secondGray};
           max-width: 284px;
           height: auto;
         }
@@ -70,14 +70,14 @@ export const SectionGetStartedStyle = styled.section`
         font-weight: 300;
         font-size: 0.875rem;
         line-height: 150%;
-        color: #667ACC;
+        color: ${props => props.theme.primaryBlue};
         max-width: 251px;
         height: 56px;
       }
       a {
         display: inline-block;
         line-height: 3.375rem;
-        background-color: #667ACC;
+        background-color: ${props => props.theme.primaryBlue};
         border-radius: 300px;
         padding: 0px 2.5rem;
         font-weight: bold;

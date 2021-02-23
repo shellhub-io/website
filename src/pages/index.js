@@ -27,10 +27,10 @@ export default function Home() {
     <SectionHeroStyle>
       <div className="container">
         <div className="text">
-          <TitleStyle>Lorem Ipsum</TitleStyle>
+          <TitleStyle>21st century SSH</TitleStyle>
           <h1>Get seamless remote access to any Linux device</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and industry lorem Ipsum has been the</p>
-          <Link to="/get-started">Free trial</Link>
+          <p>Centralized SSH for the edge and cloud computing</p>
+          <Link to="/get-started">Get Started</Link>
         </div>
         <img src={IlustraHero} className='hero' alt="Ilustration Hero"/>
       </div>

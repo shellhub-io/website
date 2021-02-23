@@ -23,7 +23,7 @@ const Header = ({fixed}) => {
               <a href="https://docs.shellhub.io/" target="_blank">Documentation</a>
             </li>
             <li>
-              <Link to="/article" activeClassName="active">Article</Link>
+              <Link to="/articles" activeClassName="active">Articles</Link>
             </li>
             <li>
               <Link to="/pricing" activeClassName="active">Pricing</Link>

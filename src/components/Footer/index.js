@@ -52,7 +52,7 @@ function Footer() {
                 <li><Link to="/pricing">Pricing</Link></li>
                 <li><Link to="/community">Community</Link></li>
                 <li><a href="https://docs.shellhub.io/" target="_blank">Documentation</a></li>
-                <li><Link to="/article">Article</Link></li>
+                <li><Link to="/articles">Articles</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
               <div className="text">

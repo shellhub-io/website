@@ -23,7 +23,7 @@ export default function MenuMobile() {
         <ul>
           <li><Link to="/community" activeClassName="active">Community</Link></li>
           <li><a href="/" target="_blank">Documentation</a></li>
-          <li><Link to="/article" activeClassName="active">Article</Link></li>
+          <li><Link to="/articles" activeClassName="active">Articles</Link></li>
           <li><Link to="/pricing" activeClassName="active">Pricing</Link></li>
           <li><Link to="/contact" activeClassName="active">Contact</Link></li>
         </ul>

@@ -23,7 +23,7 @@ function Footer() {
                 <p>Follow our getting started guide and learn the inner workings of ShellHub</p>
               </div>
             </a>
-            <Link to="/article" className="item">
+            <Link to="/articles" className="item">
               <Icon url={<IconArticle/>}/>
               <div className="txt">
                 <h3>Article</h3>
@@ -57,7 +57,7 @@ function Footer() {
               </ul>
               <div className="text">
                 <h3>Get seamless remote access to any Linux device</h3>
-                <Link to="/get-started">Free trial</Link>
+                <Link to="/get-started">Get Started</Link>
               </div>
             </div>
           </div>

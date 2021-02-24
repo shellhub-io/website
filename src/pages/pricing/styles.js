@@ -342,6 +342,48 @@ export const SectionPricingStyle = styled.section`
       }
     }
   }
+  @media(max-width: 1200px) {
+    .ant-tabs {
+      .info-geral {
+        .plans {
+          .item-plan {
+            width: 300px;
+            .box {
+              ul {
+                li {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: 1024px) {
+    .ant-tabs {
+      .info-geral {
+        .plans {
+          .item-plan {
+            width: 220px;
+            .box {
+              ul {
+                li {
+                  height: 53px;
+                  strong {
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .msg {
+          max-width: 70%;
+        }
+      }
+    }
+  }
   @media(max-width: 560px) {
     padding-top: 8.5rem;
     padding-bottom: 40px;

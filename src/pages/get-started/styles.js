@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Bg from '../../assets/bg-pricing.png'
 
 export const SectionGetStartedStyle = styled.section`
-  padding-top: 182px;
-  padding-bottom: 118px;
+  padding-top: 11.375rem;
+  padding-bottom: 3.125rem;
   background: url(${Bg}) no-repeat top center;
   background-size: 100%;
   .title {
@@ -100,6 +100,12 @@ export const SectionGetStartedStyle = styled.section`
           margin-left: 1.5625rem;
         }
       }
+    }
+  }
+  @media(max-width: 1024px) {
+    .all {
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 20px;
     }
   }
   @media(max-width: 560px) {

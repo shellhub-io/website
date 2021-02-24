@@ -28,6 +28,11 @@ export const SectionArticleStyle = styled.section`
     align-items: flex-start;
     grid-gap: 24px 33px;
   }
+  @media(max-width: 1024px) {
+    .all {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   @media(max-width: 560px) {
     padding-top: 129px;
     padding-bottom: 40px;

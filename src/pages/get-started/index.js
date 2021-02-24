@@ -30,7 +30,6 @@ export default function Home() {
             <p>Host your own instance of ShellHub and count on the freedom to adapt it to your needs. </p>
             <span>Check the ShellHub installation guide and start right now!</span>
             <a  href="https://docs.shellhub.io/" target="_blank">Get started</a>
-            <strong>Looking for more options <Arrow/></strong>
           </div>
           <div className="card">
             <div className="title-card">
@@ -48,7 +47,7 @@ export default function Home() {
               <h3>Enterprise Edition </h3>
               <p>The ShellHub's control in your hands.</p>
             </div>
-            <p>LOREM LOREM LOREM</p>
+            <p>Get a quote tailored for your business. </p>
             <span>Have all ShellHub infrastructure running into your own server.</span>
             <Link  to="/contact">Contact us</Link>
           </div>

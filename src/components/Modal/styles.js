@@ -86,4 +86,11 @@ export const ModalStyle = styled.div`
         }
       }
     }
+    @media(max-width: 560px) {
+      .box {
+        max-width: 92%;
+        height: auto;
+        padding: 40px 0px;
+      }
+    }
 `;

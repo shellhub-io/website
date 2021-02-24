@@ -138,6 +138,28 @@ export const SectionContactStyle = styled.section`
       }
     }
   }
+  @media(max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .left {
+      width: 90%;
+      margin-bottom: 2.5rem;
+      .text {
+        h1 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+      .image {
+        display: none;
+      }
+    }
+  }
   @media(max-width: 560px) {
     padding-top: 100px;
     padding-bottom: 2.5rem;

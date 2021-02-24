@@ -65,14 +65,14 @@ export default function pagePricing() {
                     </div>
                     <div className="text">
                       <p>Designed for engineers who prefer Do-it-yourself projects</p>
-                      <Link to="/get-started" className="btn">Get Started</Link>
+                      <a href="https://docs.shellhub.io/" target="_blank" className="btn">Get Started</a>
                     </div>
                   </div>
                   <div className="item-plan">
                     <div className="box">
                       <h3 className="title-plan">Enterprise</h3>
                       <ul>
-                        <li><strong>$ 3,00 (device/month)</strong></li>
+                        <li><strong>Based on the number of devices</strong></li>
                         <li><CheckedItemPlan/></li>
                         <li><CheckedItemPlan/></li>
                         <li><CheckedItemPlan/></li>
@@ -104,7 +104,7 @@ export default function pagePricing() {
                       </li>
                       <li>
                         <span>Enterprise</span>
-                        <strong>$ 3,00 (device/month)</strong>
+                        <strong>Based on the number of devices</strong>
                       </li>
                     </ul>
                   </div>
@@ -243,11 +243,11 @@ export default function pagePricing() {
                   <div className="card">
                     <h3>Community plan</h3>
                     <p>Designed for engineers who prefer Do-it-yourself projects</p>
-                    <Link to="/get-started">Get Started</Link>
+                    <a href="https://docs.shellhub.io/" target="_blank">Get Started</a>
                   </div>
                   <div className="card">
                     <h3>Enterprise plan</h3>
-                    <p>Designed for engineers who prefer Do-it-yourself projects</p>
+                    <p>Designed for engineering teams with enterprises grade needs</p>
                     <Link to="/contact" className="btn">Get in touch</Link>
                   </div>
                 </div>
@@ -304,7 +304,7 @@ export default function pagePricing() {
                     <h3>Price</h3>
                     <ul>
                       <li>
-                        <strong>$ 3,00 (device/month)</strong>
+                        <strong>Service free up to 3 devices</strong>
                       </li>
                     </ul>
                   </div>

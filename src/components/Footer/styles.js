@@ -183,7 +183,8 @@ export const FooterStyle = styled.footer`
       }
     }
   }
-  @media(max-width: 560px) {
+  @media(max-width: 991px) {
+    padding-top: 60px;
     border-top: 1px solid rgb(55 67 109 / 0.3);
     .main {
       flex-direction: column;

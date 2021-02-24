@@ -15,6 +15,7 @@ import IconEnvelopeError from '../../assets/envelope-error.svg'
 export default function Home() {
   const [modalSuccess, setModalSuccess] = useState(false)
   const [modalError, setModalError] = useState(false)
+  const [select, setSelect] = useState('')
  
 
   const { register, handleSubmit, errors } = useForm()
@@ -27,8 +28,6 @@ export default function Home() {
   function onSubmit(data) {
     setModalSuccess(true);
     
-    console.log(data);
-
     fetch('https://mail.updatehub.io/contact', {
       method : 'POST',
       headers: {
@@ -39,7 +38,7 @@ export default function Home() {
         "name" : `${data.name}`,
         "email" : `${data.email}`,
         "extra_fields" : { 
-          "subject_matter" : `${data.subjectMatter}`,
+          "subject" : `${data.subjectMatter}`,
           "device_number"  : `${data.numberDevice}`
         },
         "message" : `${data.message}`
@@ -105,20 +104,31 @@ export default function Home() {
               <select 
                 name="subjectMatter"
                 ref={register({ required : true })}
+                onChange={({target}) => setSelect(target.value)}
+                
               >
-                <option value="">Get a quote</option>
-                <option value="opt-01">option  01</option>
-                <option value="opt-02">option  02</option>
+                <option value="">Please select the desired topic</option>
+                <option value="Plan">Plan</option>
+                <option value="Support">Support</option>
+                <option value="Get a quote">Get a quote</option>
               </select>
               { errors.subjectMatter && <p className="error">Select an option</p> }
-              <input 
-                type="text" 
-                name="numberDevice"
-                placeholder="Inform the number of devices and plan of interest" 
-                className="input-interest"
-                ref={register({ required : true })}
-              />
-              { errors.numberDevice && <p className="error">Number of device is required</p> }
+              
+              {
+                select === "Get a quote" && (
+                  <>
+                    <input 
+                      type="text" 
+                      name="numberDevice"
+                      placeholder="Inform the number of devices and plan of interest" 
+                      className="input-interest"
+                      ref={register({ required : true })}
+                    />
+                    { errors.numberDevice && <p className="error">Number of device is required</p> }
+                  </>
+                )
+              }
+              
             </div>
             <div className="form-group">
               <textarea 

@@ -25,8 +25,8 @@ export default function pageCommunity() {
             <div className="btns">
 
 
-              <a href="https://github.com/shellhub-io/shellhub/stargazers/" target="_blank">Star</a>
-              <a href="https://github.com/shellhub-io/shellhub/network" target="_blank">Fork</a>
+              <GitHubButton type="stargazers" namespace="shellhub-io" repo="shellhub" />
+              <GitHubButton type="forks" namespace="shellhub-io" repo="shellhub" />
             </div>
             <a href="https://github.com/shellhub-io" target="_blank" className="btn-github">
               <GitHub/>
@@ -44,30 +44,32 @@ export default function pageCommunity() {
               <h2>The Open Source benefits</h2>
               <p>Open Source developers' skills and vision diversity are essential to maintain ShellHub code and product quality.</p>
             </div>
-            <Link to="/get-started">Try shellhub</Link>
           </div>
-          <div className="all">
-            <div className="card">
-              <Icon url={<IconAvoid/>}/>
-              <div>
-                <h3>Avoid vendor lock-in</h3>
-                <p>ShellHub is also available in a fully Open Source version giving you the freedom to adopt the best version for your use case</p>
+          <div className="main-area">
+            <div className="all">
+              <div className="card">
+                <Icon url={<IconAvoid/>}/>
+                <div>
+                  <h3>Avoid vendor lock-in</h3>
+                  <p>ShellHub is also available in a fully Open Source version giving you the freedom to adopt the best version for your use case</p>
+                </div>
+              </div>
+              <div className="card">
+                <Icon url={<IconAvoid/>}/>
+                <div>
+                  <h3>Continuously<br/> innovating</h3>
+                  <p>A community committed to improving the experience, quality, and security.</p>
+                </div>
+              </div>
+              <div className="card">
+                <Icon url={<IconAvoid/>}/>
+                <div>
+                  <h3>No secret sauce</h3>
+                  <p>Same ShellHub agent in all versions. Check the code and stay up to date with all changes and updates. </p>
+                </div>
               </div>
             </div>
-            <div className="card">
-              <Icon url={<IconAvoid/>}/>
-              <div>
-                <h3>Continuously<br/> innovating</h3>
-                <p>A community committed to improving the experience, quality, and security.</p>
-              </div>
-            </div>
-            <div className="card">
-              <Icon url={<IconAvoid/>}/>
-              <div>
-                <h3>No secret sauce</h3>
-                <p>Same ShellHub agent in all versions. Check the code and stay up to date with all changes and updates. </p>
-              </div>
-            </div>
+            <Link to="/get-started">Try ShellHub</Link>
           </div>
         </div>
       </SectionOpenSourceStyle>

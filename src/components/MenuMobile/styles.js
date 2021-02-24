@@ -58,7 +58,7 @@ export const ButtonMobileStyle = styled.button`
       }
     }
   }
-  @media(max-width: 560px) {
+  @media(max-width: 991px) {
     display: block;
   }
 `;

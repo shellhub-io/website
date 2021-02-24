@@ -59,7 +59,7 @@ const articles = [
     logo : `${Reposhub}`,
     title : 'Centralized SSH for the edge and cloud computing.',
     date: '28/08/20',
-    description: 'hellHub ShellHub is a modern SSH server for remotely accessing Linux devices via command line...',
+    description: 'ShellHub is a modern SSH server for remotely accessing Linux devices via command line...',
     url: 'https://reposhub.com/go/command-line/shellhub-io-shellhub.html'
   },
   {
@@ -92,7 +92,7 @@ const articles = [
   },
   {
     logo : `${HackerNews}`,
-    title : 'ShellHub permite que as equipas acedam facilmente a qualquer dispositivo...',
+    title : 'ShellHub enables teams to easily access any Linux device...',
     date: '27/01/20',
     description: 'ShellHub enables teams to easily access any Linux device behind firewall and NAT :',
     url: 'https://www.facebook.com/hn.hiren.news/posts/shellhub-enables-teams-to-easily-access-any-linux-device-behind-firewall-and-nat/2574408262802420/'

@@ -16,6 +16,12 @@ const GlobalStyle = createGlobalStyle`
   }
   html {
     font-size: 16px;
+    @media(max-width: 1200px) {
+      font-size: 14px;
+    }
+    @media(max-width: 560px) {
+      font-size: 16px;
+    }
   }
   img {
     display: block;

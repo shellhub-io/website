@@ -53,8 +53,19 @@ export const SectionHeroStyle = styled.section`
     right: -100px;
     pointer-events: none;
   }
-  @media(max-width: 560px) {
-    margin-top: 93px;
+  @media(max-width: 1200px) {
+    height: 670px;
+    .hero {
+      max-width: 700px;
+      top: 0;
+      right: 0;
+    }
+    .text {
+      max-width: 470px;
+    }
+  }
+  @media(max-width:  991px) {
+    margin-top: 120px;
     padding: 1.875rem 0px;
     height: auto;
     padding-bottom: 0;
@@ -64,17 +75,13 @@ export const SectionHeroStyle = styled.section`
     }
     .text {
       margin: 0 auto;
+      max-width: 90%;
       h1 {
         text-align: center;
-        font-size: 2.5rem;
-        max-width: 327px;
-        margin-bottom: 1.125rem;
       }
       p {
-        text-align: center;
-        font-size: 1rem;
-        max-width: 303px;
         margin: 0 auto;
+        text-align: center;
         margin-bottom: 30px;
       }
       a {
@@ -85,8 +92,29 @@ export const SectionHeroStyle = styled.section`
       position: relative;
       right: 0;
       top: 0;
-      max-width: 400px;
+      max-width: 600px;
       left: 50%;
+      margin-left: -325px;
+    }
+  }
+  @media(max-width: 560px) {
+    margin-top: 93px;
+    .text {
+      margin: 0 auto;
+      max-width: 100%;
+      h1 {
+        font-size: 2.5rem;
+        max-width: 327px;
+        margin-bottom: 1.125rem;
+      }
+      p {
+        font-size: 1rem;
+        max-width: 303px;
+
+      }
+    }
+    .hero {
+      max-width: 400px;
       margin-left: -225px;
     }
   }
@@ -155,13 +183,31 @@ export const SectionWhatStyle = styled.section`
       color: #FFFFFF;
     }
   }
-  @media(max-width: 560px) {
+  @media(max-width: 991px) {
     padding-top: 0px;
     margin-bottom: 0;
     .container {
       flex-direction: column-reverse;
       align-items: center;
     }
+    .text {
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 40px;
+      max-width: 90%;
+      p {
+        text-align: center;
+      }
+    }
+    &:after  {
+      max-width: 100%;
+      width: 100%;
+      left: 0;
+      bottom: 0px;
+      margin-left: 0;
+    }
+  }
+  @media(max-width: 560px) {
     .text {
       margin: 0;
       margin-bottom: 55px;
@@ -187,7 +233,7 @@ export const SectionWhatStyle = styled.section`
 export const SectionSuccessStyle = styled.section`
   position:  relative;
   width: 100%;
-  height: 746px;
+  height: 46.625rem;
   overflow-x: hidden;
   .container {
     position: relative;
@@ -252,18 +298,29 @@ export const SectionSuccessStyle = styled.section`
       }
     }
   }
-  @media(max-width: 560px) {
-    padding-bottom: 50px;
+  @media(max-width: 991px) {
+    height: auto;
+    padding-bottom: 60px;
     .container {
       flex-direction: column;
       align-items: center;
     }
     .image {
+      max-width: 600px;
       position: relative;
-      left: 50%;
+      left: 0;
       top: 0;
+      margin-left: 0;
+    }
+    .text {
+      max-width: 90%;
+    }
+  }
+  @media(max-width: 560px) {
+    padding-bottom: 50px;
+    .image {
       max-width: 470px;
-      margin-left: -304px;
+      margin-left: 20px;
       margin-top: -50px;
     }
     .text {
@@ -298,9 +355,9 @@ export const SectionFeaturesStyle = styled.section`
     .card {
       background: ${props => props.theme.gradientDark};
       width: 100%;
-      height: 376px;
+      height: 23.5rem;
       border-radius: 8px;
-      padding: 54px 48px;
+      padding: 3.375rem 3rem;
       h3 {
         margin-top: 0.8125rem;
         max-width: 280px;
@@ -317,6 +374,15 @@ export const SectionFeaturesStyle = styled.section`
         line-height: 140%;
         color: ${props => props.theme.secondGray};
       }
+    }
+  }
+  @media(max-width: 991px) {
+    padding-top: 50px;
+    h2 {
+      text-align: center;
+    }
+    .all {
+      grid-template-columns: repeat(2,1fr);
     }
   }
   @media(max-width: 560px) {
@@ -368,9 +434,11 @@ export const TitleStyle = styled.h3`
     border-top: 1px solid #8299F5;
     margin-right: 24px;
   }
-  @media(max-width: 560px) {
+  @media(max-width: 991px) {
     justify-content: center;
-    font-size: 1rem;
     margin-bottom: 1rem;
+  }
+  @media(max-width: 560px) {
+    font-size: 1rem;
   }
 `;

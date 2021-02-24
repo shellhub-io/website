@@ -68,7 +68,7 @@ export default function Home() {
           <div className="card">
             <Icon url={<IconPlethora/>} />
             <h3>A plethora of Devices, Connectable Right Away</h3>
-            <p>Support multiple devices connected at the same time, different networks, and integration with architectures, including ARM (32 and 64 bits), which is used in most embedded devices, like Raspberry Pi, and i.XM6.</p>
+            <p>Support multiple devices connected at the same time, different networks, and integration with architectures, including ARM (32 and 64 bits), which is used in most embedded devices, like Raspberry Pi, and i.MX6.</p>
           </div>
           <div className="card">
             <Icon url={<IconAutomation/>} />
@@ -99,7 +99,7 @@ export default function Home() {
           <a href="https://github.com/shellhub-io/shellhub" target="_blank">
             <div className="txt">
               <Github/>
-              <strong>Join the thousands of developers who are creating thebest remote access platform on</strong>
+              <strong>Join thousands of developers who are creating the best remote access platform.</strong>
             </div>
             <ArrowBlue/>
           </a>

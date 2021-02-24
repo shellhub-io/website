@@ -62,6 +62,12 @@ export const HeaderStyle = styled.header`
       }
     }
   }
+  @media(max-width: 991px) {
+    padding: 2rem 0px;
+    nav {
+      display:none;
+    }
+  }
   @media(max-width: 560px) {
     padding: 1.8125rem 0px;
     background-color: #272B33;
@@ -71,9 +77,6 @@ export const HeaderStyle = styled.header`
       svg {
         width: 100%;
       }
-    }
-    nav {
-      display:none;
     }
   }
 `;

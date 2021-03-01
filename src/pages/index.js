@@ -93,7 +93,7 @@ export default function Home() {
       <div className="container">
         <img src={IlustraSuccess} className="image" alt="Ilustration success"/>
         <div className="text">
-          <p>Every successful software is adapted to its users needs. The best way to adapt the software forits users needs is allowing its users to directly influence its development and direction, thusopen-sourcing ShellHub was the obvious choice.</p>
+          <p>Every  successful software is adapted to its users needs. The best way to adapt the software forits users needs is allowing its users to directly influence its development and direction, thusopen-sourcing ShellHub was the obvious choice.</p>
           <p>We believe the future is Open Source and wecount on you to join us in this journey.</p>
 
           <a href="https://github.com/shellhub-io/shellhub" target="_blank">

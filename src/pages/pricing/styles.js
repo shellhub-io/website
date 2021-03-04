@@ -1,7 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import Line from '../../assets/line-column.png'
-import Bg from '../../assets/bg-pricing.png'
+import Line from "../../assets/line-column.png";
+import Bg from "../../assets/bg-pricing.png";
+import "react-rangeslider/lib/index.css";
 
 export const SectionPricingStyle = styled.section`
   padding-top: 11.375rem;
@@ -17,7 +18,7 @@ export const SectionPricingStyle = styled.section`
       line-height: 140%;
       text-align: center;
       letter-spacing: 0.01em;
-      color: #8299F5;
+      color: #8299f5;
       margin-bottom: 8px;
     }
     h1 {
@@ -25,7 +26,7 @@ export const SectionPricingStyle = styled.section`
       font-size: 2.25rem;
       line-height: 140%;
       text-align: center;
-      color: #FFFFFF;
+      color: #ffffff;
       font-weight: normal;
       margin-bottom: 23px;
     }
@@ -40,6 +41,7 @@ export const SectionPricingStyle = styled.section`
     }
   }
   .ant-tabs {
+    overflow: initial;
     .ant-tabs-nav {
       margin-bottom: 3.5625rem;
       &:before {
@@ -95,7 +97,7 @@ export const SectionPricingStyle = styled.section`
         padding-top: 0;
         margin-right: 0;
         &.ant-tabs-tab-active {
-          .ant-tabs-tab-btn  {
+          .ant-tabs-tab-btn {
             span {
               color: ${props => props.theme.primaryBlue};
               strong {
@@ -113,7 +115,7 @@ export const SectionPricingStyle = styled.section`
             color: ${props => props.theme.secondBlue};
             display: flex;
             align-items: center;
-            transition: color ease .3s;
+            transition: color ease 0.3s;
             strong {
               display: inline-block;
               font-weight: 600;
@@ -124,7 +126,7 @@ export const SectionPricingStyle = styled.section`
               border-radius: 16px;
               padding: 0px 10px;
               margin-left: 11px;
-              transition: background-color ease .3s;
+              transition: background-color ease 0.3s;
             }
           }
         }
@@ -145,7 +147,7 @@ export const SectionPricingStyle = styled.section`
           font-size: 1.375rem;
           line-height: 140%;
           letter-spacing: 0.01em;
-          color: #FFFFFF;
+          color: #ffffff;
           margin-bottom: 3.3125rem;
         }
         ul {
@@ -154,7 +156,7 @@ export const SectionPricingStyle = styled.section`
             line-height: 3.875rem;
             font-weight: 300;
             font-size: 1rem;
-            color: #FFFFFF;
+            color: #ffffff;
             &:after {
               content: "";
               position: absolute;
@@ -164,11 +166,51 @@ export const SectionPricingStyle = styled.section`
               height: 2px;
               background: url(${Line}) no-repeat center center;
             }
+            &.last {
+              margin-bottom: 63px;
+              &:after {
+                content: none;
+              }
+            }
+          }
+        }
+        .bot-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 3.3125rem;
+          .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 386px;
+            p {
+              max-width: 267px;
+              font-weight: 300;
+              font-size: 0.875rem;
+              line-height: 140%;
+              text-align: center;
+              color: ${props => props.theme.secondGray};
+              margin-bottom: 1.9375rem;
+            }
+            a {
+              line-height: 3.375rem;
+              background: ${props => props.theme.primaryBlue};
+              border-radius: 300px;
+              padding: 0px 40px;
+              font-weight: bold;
+              font-size: 1rem;
+              color: #ffffff;
+              transition: background-color ease 0.3s;
+              &:hover {
+                background: #8299f5;
+              }
+            }
           }
         }
       }
       .plans {
-        position: relative;
+        position: initial;
         z-index: 1;
         display: flex;
         align-items: flex-start;
@@ -182,7 +224,11 @@ export const SectionPricingStyle = styled.section`
             margin-left: 0px;
           }
           .box {
-            background: linear-gradient(164.36deg,rgb(70 113 137 / 0.4) -64.36%,rgba(61,76,129,0) 56.68%);
+            background: linear-gradient(
+              164.36deg,
+              rgb(70 113 137 / 0.4) -64.36%,
+              rgba(61, 76, 129, 0) 56.68%
+            );
             border-radius: 8px;
             margin-bottom: 3.4375rem;
             .title-plan {
@@ -200,7 +246,7 @@ export const SectionPricingStyle = styled.section`
                 position: relative;
                 height: 62px;
                 font-size: 20px;
-                color: #FFFFFF;
+                color: #ffffff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -228,17 +274,16 @@ export const SectionPricingStyle = styled.section`
               padding: 0px 40px;
               font-weight: bold;
               font-size: 1rem;
-              color: #FFFFFF;
-              transition: background-color ease .3s;
+              color: #ffffff;
+              transition: background-color ease 0.3s;
               &:hover {
-                background: #8299F5;
+                background: #8299f5;
               }
             }
           }
         }
       }
       .msg {
-        margin-top: 3.3125rem;
         font-weight: 300;
         font-size: 0.875rem;
         line-height: 140%;
@@ -263,7 +308,7 @@ export const SectionPricingStyle = styled.section`
           font-size: 0.875rem;
           line-height: 140%;
           text-align: center;
-          color: #FFFFFF;
+          color: #ffffff;
           margin-bottom: 1.125rem;
         }
         ul {
@@ -290,7 +335,7 @@ export const SectionPricingStyle = styled.section`
               line-height: 140%;
               text-align: center;
               letter-spacing: 0.01em;
-              color: #FFFFFF;
+              color: #ffffff;
             }
           }
         }
@@ -315,11 +360,11 @@ export const SectionPricingStyle = styled.section`
             line-height: 150%;
             text-align: center;
             letter-spacing: 0.02em;
-            color: #FFFFFF;
-            margin-bottom:  0.875rem;
+            color: #ffffff;
+            margin-bottom: 0.875rem;
           }
           p {
-            text-align:center;
+            text-align: center;
             margin-bottom: 0.875rem;
             font-weight: 300;
             font-size: 0.875rem;
@@ -336,13 +381,157 @@ export const SectionPricingStyle = styled.section`
             padding: 0px 2.5rem;
             font-weight: bold;
             font-size: 1rem;
-            color: #FFFFFF;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .calc-price {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .slider {
+        max-width: 836px;
+        flex: 1;
+        min-width: 300px;
+        .top-slider {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          span {
+            height: 100%;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              svg {
+                transform: scale(1.05);
+              }
+            }
+          }
+        }
+        .rangeslider-horizontal {
+          height: 8px;
+          border-radius: 10px;
+        }
+        .rangeslider-horizontal .rangeslider__handle:after {
+          content: none;
+        }
+        .rangeslider-horizontal .rangeslider__handle {
+          width: 28px;
+          height: 28px;
+          background: #667acc;
+          border: 3px solid #262b34;
+          box-sizing: border-box;
+          box-shadow: none;
+        }
+        .rangeslider {
+          box-shadow: none;
+          background: #2b3440;
+          .rangeslider__handle-tooltip {
+            transition: none;
+          }
+        }
+        .rangeslider-horizontal .rangeslider__fill {
+          box-shadow: none;
+          background: linear-gradient(
+            90deg,
+            #667acc 43.06%,
+            rgba(102, 122, 204, 0) 111.98%
+          );
+        }
+        .rangeslider-horizontal .rangeslider__handle-tooltip {
+          left: ${props => props.tooltip.left};
+          top: -69px;
+          background: #2b3440;
+          border-radius: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 195px;
+          height: 55px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: 0.01em;
+          color: #dce3ff;
+          border: 2px solid #2b3440;
+          transition: none;
+          strong {
+            font-weight: 600;
+            font-size: 28px;
+          }
+          span {
+            margin: 0;
+          }
+          &:after {
+            left: ${props =>
+              props.tooltip.sliderArrowRight ? "unset" : props.tooltip.arrow};
+            right: ${props =>
+              props.tooltip.sliderArrowRight ? props.tooltip.arrow : "unset"};
+          }
+        }
+        .rangeslider-horizontal .rangeslider__handle-tooltip:after {
+          border-top: 8px solid #2b3440;
+          bottom: -12px;
+        }
+      }
+      .box-price {
+        .box {
+          position: relative;
+          width: 243px;
+          height: 97px;
+          background: #2b3440;
+          border-radius: 8px;
+          margin-left: 3.75rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          @media screen and (max-width: 628px) {
+            margin: 10px auto;
+          }
+          &:after {
+            right: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            @media screen and (max-width: 628px) {
+              right: 45%;
+              transform: rotate(90deg);
+              top: -9px;
+            }
+          }
+
+          &:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-right-color: #2b3440;
+            border-width: 0.7188rem;
+            margin-top: -0.7188rem;
+          }
+
+          .price {
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            color: #8299f5;
+          }
+          .text {
+            font-weight: normal;
+            font-size: 1rem;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            color: #ffffff;
           }
         }
       }
     }
   }
-  @media(max-width: 1200px) {
+  @media (max-width: 1200px) {
     .ant-tabs {
       .info-geral {
         .plans {
@@ -360,7 +549,7 @@ export const SectionPricingStyle = styled.section`
       }
     }
   }
-  @media(max-width: 1024px) {
+  @media (max-width: 1024px) {
     .ant-tabs {
       .info-geral {
         .plans {
@@ -384,7 +573,7 @@ export const SectionPricingStyle = styled.section`
       }
     }
   }
-  @media(max-width: 560px) {
+  @media (max-width: 560px) {
     padding-top: 8.5rem;
     padding-bottom: 40px;
     .title {
@@ -404,7 +593,7 @@ export const SectionPricingStyle = styled.section`
       }
     }
     .ant-tabs {
-      .ant-tabs-nav  {
+      .ant-tabs-nav {
         margin-bottom: 40px;
       }
       .ant-tabs-nav-list {
@@ -419,7 +608,7 @@ export const SectionPricingStyle = styled.section`
       }
       .ant-tabs-tabpane {
         &:last-child {
-          .info-geral-mobile  {
+          .info-geral-mobile {
             .item {
               ul {
                 grid-template-columns: 1fr;

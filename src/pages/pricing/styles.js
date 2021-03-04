@@ -476,6 +476,9 @@ export const SectionPricingStyle = styled.section`
         }
       }
       .box-price {
+        @media screen and (max-width: 628px) {
+          flex: 1;
+        }
         .box {
           position: relative;
           width: 243px;

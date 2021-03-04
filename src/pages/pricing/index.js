@@ -43,6 +43,26 @@ export default function PagePricing() {
         setSliderArrow(50);
         break;
     }
+    if (document.getElementsByClassName("rangeslider__handle")[0]) {
+      document
+        .getElementsByClassName("rangeslider__handle")[0]
+        .insertAdjacentHTML(
+          "beforeend",
+          '<div class="rangeslider__handle-tooltip"><span><strong>' +
+            sliderValue +
+            " </strong><span> devices</span></span></div>"
+        );
+    }
+    if (document.getElementsByClassName("rangeslider__handle")[1]) {
+      document
+        .getElementsByClassName("rangeslider__handle")[1]
+        .insertAdjacentHTML(
+          "beforeend",
+          '<div class="rangeslider__handle-tooltip"><span><strong>' +
+            sliderValue +
+            " </strong><span> devices</span></span></div>"
+        );
+    }
   });
   function handleChange(value) {
     setSliderValue(value);

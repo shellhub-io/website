@@ -167,7 +167,7 @@ export const SectionPricingStyle = styled.section`
               background: url(${Line}) no-repeat center center;
             }
             &.last {
-              margin-bottom: 63px;
+              margin-bottom: 10px;
               &:after {
                 content: none;
               }

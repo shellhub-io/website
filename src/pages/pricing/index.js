@@ -22,7 +22,9 @@ export default function PagePricing() {
   const [price, setPrice] = React.useState(1);
   React.useEffect(() => {
     const price =
-      sliderValue * (0.97 ^ (Math.round(Math.min(sliderValue, 200) / 15) * 3));
+      (sliderValue - 3) *
+      Math.pow(0.97, Math.round(Math.min(sliderValue - 3, 200) / 15)) *
+      3;
     setPrice(price);
     switch (true) {
       case sliderValue < 10:
@@ -30,10 +32,10 @@ export default function PagePricing() {
         setSliderLeft((sliderValue * 10 - 90) * -1 + sliderValue * 2);
         setSliderArrow(sliderValue * 4 + 10);
         break;
-      case sliderValue > 94:
+      case sliderValue > 194:
         setSliderArrowRight(true);
-        setSliderLeft((sliderValue - 101) * -1 * 10 - 60);
-        setSliderArrow((sliderValue - 101) * -1 * 5 + 5);
+        setSliderLeft((sliderValue - 201) * -1 * 10 - 60);
+        setSliderArrow((sliderValue - 201) * -1 * 5 + 5);
         break;
       default:
         setSliderArrowRight(false);
@@ -439,7 +441,7 @@ export default function PagePricing() {
                       </div>
                       <Slider
                         min={1}
-                        max={100}
+                        max={200}
                         tooltip={true}
                         format={handleFormat}
                         value={sliderValue}
@@ -448,8 +450,12 @@ export default function PagePricing() {
                     </div>
                     <div className="box-price">
                       <div className="box">
-                        <div className="price">$ {price}</div>
-                        <div className="text">total per month.</div>
+                        <div className="price">
+                          {price <= 0 ? "Free" : "$ " + price.toFixed(2)}
+                        </div>
+                        {price > 0 && (
+                          <div className="text">total per month.</div>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -637,7 +643,7 @@ export default function PagePricing() {
                     </div>
                     <Slider
                       min={1}
-                      max={100}
+                      max={200}
                       tooltip={true}
                       format={handleFormat}
                       value={sliderValue}
@@ -646,8 +652,12 @@ export default function PagePricing() {
                   </div>
                   <div className="box-price">
                     <div className="box">
-                      <div className="price">$ {price}</div>
-                      <div className="text">total per month.</div>
+                      <div className="price">
+                        {price <= 0 ? "Free" : "$ " + price.toFixed(2)}
+                      </div>
+                      {price > 0 && (
+                        <div className="text">total per month.</div>
+                      )}
                     </div>
                   </div>
                 </div>

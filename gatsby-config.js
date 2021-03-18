@@ -20,9 +20,21 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-168888230-1',
+        trackingIds: [
+          "UA-168888230-1",
+        ],
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },
       },
     },
     {

@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "UA-168888230-1",
+          process.env.GA_ID,
         ],
         gtagConfig: {
           optimize_id: "OPT_CONTAINER_ID",
@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: 'GTM-57P8QVT',
+        id: process.env.GTM_ID,
         includeInDevelopment: true,
       },
     },

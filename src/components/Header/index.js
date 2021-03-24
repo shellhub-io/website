@@ -34,7 +34,7 @@ const Header = ({fixed}) => {
               <Link to="/contact" activeClassName="active">Contact</Link>
             </li>
           </ul>
-          <Link to="/get-started" className="btn" activeClassName="active">Get started</Link>
+          <Link href="//cloud.shellhub.io/login" className="btn" activeClassName="active">Login</Link>
         </nav>
         <MenuMobile/>
       </div>

@@ -90,7 +90,7 @@ export default function Home() {
                 type="email" 
                 name="email"
                 placeholder="Type your e-mail"
-                ref={register({ required : true, pattern: /^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/g })}
+                ref={register({ required : true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g })}
               />
               { 
                 errors.email && errors.email.type === "required" && <p className="error">E-mail is required</p> 

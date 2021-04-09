@@ -16,6 +16,7 @@ export default function Home() {
   const [modalSuccess, setModalSuccess] = useState(false)
   const [modalError, setModalError] = useState(false)
   const [select, setSelect] = useState('')
+  let messageBody;
  
 
   const { register, handleSubmit, errors } = useForm()
@@ -27,6 +28,12 @@ export default function Home() {
 
   function onSubmit(data) {
     setModalSuccess(true);
+
+    if (typeof data.numberDevice !== 'undefined') {
+        messageBody = `Number of devices: ${data.numberDevice} \n\n ${data.message}`;
+    } else {
+        messageBody = `${data.message}`;
+    }
     
     fetch('https://mail.cloud.shellhub.io/contact', {
       method : 'POST',
@@ -37,11 +44,8 @@ export default function Home() {
       body: JSON.stringify({
         "name" : `${data.name}`,
         "email" : `${data.email}`,
-        "extra_fields" : { 
-          "subject" : `${data.subjectMatter}`,
-          "device_number"  : `${data.numberDevice}`
-        },
-        "message" : `${data.message}`
+        "subject" : `${data.subjectMatter}`,
+        "message" : `${messageBody}`
       })
     })
     .then(res => res.json())

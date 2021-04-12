@@ -440,13 +440,12 @@ export default function PagePricing() {
                 <div className="items">
                   <ul>
                     <li>Price</li>
-                    <li>Host anywhere</li>
+                    <li>Managed Kubernetes Cluster</li>
+                    <li>Secure and scalable environment</li>
                     <li>Secure remote communication</li>
                     <li>Suitable for any infrastructure</li>
                     <li>Protection Against DDoS Attacks</li>
                     <li>Documentation and Technical Support</li>
-                    <li>Admin console</li>
-                    <li>Fully managed</li>
                     <li>Managing Firewall Rules</li>
                     <li>Session record and playback</li>
                     <li>Firewall for filtering SSH connections</li>

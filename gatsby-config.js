@@ -87,6 +87,13 @@ module.exports = {
         icon: `src/assets/icon.png`
       },
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1786900,
+        sv: 6,
+      },
+    },
   ],
 }

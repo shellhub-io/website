@@ -30,7 +30,7 @@ export default function MenuMobile() {
           <li><Link to="/contact" activeClassName="active">Contact</Link></li>
         </ul>
 
-        <Link className="btn" to="/get-started" activeClassName="active">Get started</Link>
+        <Link href="//cloud.shellhub.io/login" className="btn" activeClassName="active">Login</Link>
 
       </MenuMobileStyle>
       }

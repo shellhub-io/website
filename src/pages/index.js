@@ -1,15 +1,14 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from 'gatsby'
 
 import Layout from  '../components/Layout'
 import SEO from '../components/Seo'
 import Icon from '../components/Icon'
+import Video from "../components/Video"
 
 import { SectionHeroStyle, SectionWhatStyle, TitleStyle, SectionFeaturesStyle, SectionSuccessStyle } from '../styles/home'
 
 import IlustraHero from '../assets/ilustra-hero.png'
-import TxtButton from '../assets/txt-button.png'
-import ButtonPlay from '../assets/button-play.png'
 import IconClock from '../assets/icon-clock.svg'
 import IconSecure from '../assets/icon-secure.svg'
 import IconPlethora from '../assets/icon-plethora.svg'
@@ -21,6 +20,20 @@ import Github from '../assets/github.svg'
 import ArrowBlue from '../assets/arrow-right-blue.svg'
 
 export default function Home() {
+  const [lang, setLang] = useState(0);
+
+  useEffect(() => {
+    const detectBrowserLanguage = require("detect-browser-language");
+    setLang(detectBrowserLanguage());
+  }, []);
+
+  const videoInfo = function () {
+    if (lang === "pt-BR") {
+      return ["https://www.youtube.com/embed/1qT6w_Mw8GA", "ShellHub: O SSH do século XXI!"]
+    }      
+    return ["https://www.youtube.com/embed/zQkhxN5H5jk", "ShellHub: the 21st century SSH!"]
+  }
+
   return <Layout>
     <SEO title="Home" description="ShellHub is a modern SSH server for remotely accessing Linux devices via command line (using any SSH client) or web-based user interface. Register now." lang="en" />
 
@@ -38,12 +51,12 @@ export default function Home() {
 
     <SectionWhatStyle>
       <div className="container">
-        <button className="video">
-          <div className="play">
-            <img src={ButtonPlay} className="icon" alt="Icon play"/>
-            <img src={TxtButton} className="txt-label" alt="Text button whats"/>
-          </div>
-        </button>
+        <div className="video">
+          <Video
+            videoSrcURL={videoInfo()[0]}
+            videoTitle={videoInfo()[1]}
+          />
+        </div>
         <div className="text">
           <TitleStyle>What is ShellHub?</TitleStyle>
           <p>ShellHub is a modern SSH server for remotely accessing Linux devices via the command line (using any SSH client) or a web-based user interface.</p>
@@ -106,6 +119,5 @@ export default function Home() {
         </div>
       </div>
     </SectionSuccessStyle>
-    
   </Layout>
 }

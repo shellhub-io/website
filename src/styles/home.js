@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import ThumbVideo from '../assets/thumb-video.png'
-
 export const SectionHeroStyle = styled.section`
   position: relative;
   flex: 1;
@@ -144,7 +142,6 @@ export const SectionWhatStyle = styled.section`
     align-items: flex-start;
     width: 580px;
     height: 480px;
-    background: url(${ThumbVideo}) no-repeat center center;
     &:hover {
       .play {
         .icon {
@@ -169,6 +166,9 @@ export const SectionWhatStyle = styled.section`
         left: 0;
         transition: transform ease .5s;
       }
+    }
+    .iframe {
+      border-radius: 8px;
     }
   }
   .text {

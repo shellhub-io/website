@@ -29,9 +29,9 @@ export default function Home() {
 
   const videoInfo = function () {
     if (lang === "pt-BR") {
-      return ["https://www.youtube.com/embed/1qT6w_Mw8GA", "ShellHub: O SSH do século XXI!"]
+      return ["https://www.youtube.com/embed/yetdbABXXOE", "O que é o ShellHub?"]
     }      
-    return ["https://www.youtube.com/embed/zQkhxN5H5jk", "ShellHub: the 21st century SSH!"]
+    return ["https://www.youtube.com/embed/Uf7p6sKVAP4", "What is the ShellHub?"]
   }
 
   return <Layout>

@@ -24,10 +24,22 @@ export default function PagePricing() {
   /* Silent warning  about the Slider Value of hook*/
   /* eslint-disable-next-line */
   React.useEffect(() => {
-    const price =
-      (sliderValue - 3) *
-      Math.pow(0.97, Math.round(Math.min(sliderValue - 3, 200) / 15)) *
-      3;
+    const price = () => {
+        let sumPrice = 0;
+
+        const ranges = [3, 10, 25, 40, 55, 70, 85, 100, 115, 130, 145, 160, 175, 190, Infinity];
+        const ks = [3, 2.91, 2.82, 2.74, 2.66, 2.58, 2.50, 2.42, 2.35, 2.28, 2.21, 2.15, 2.08, 2.02, 2.00];
+
+        const tiers = Array.from({length: ks.length -1}, (_, i) => ({begin: ranges[i], upTo: ranges[i+1], k: ks[i]}))
+
+        tiers.forEach((t) => {
+            if (sliderValue > t.begin) {
+              sumPrice += ((sliderValue<=t.upTo)?(sliderValue-t.begin):(t.upTo-t.begin))*t.k;
+            }
+        })
+
+        return sumPrice;
+    }
     setPrice(price);
     switch (true) {
       case sliderValue < 10:

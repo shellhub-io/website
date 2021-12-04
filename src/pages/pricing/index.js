@@ -124,329 +124,13 @@ export default function PagePricing() {
           </div>
 
           <Tabs defaultActiveKey="self">
-            <TabPane tab={<span>Self-managed</span>} key="self">
-              <div className="info-geral">
-                <div className="items">
-                  <h3>Compare Our Plans</h3>
-                  <ul>
-                    <li>Price</li>
-                    <li>Host anywhere</li>
-                    <li>Secure remote communication</li>
-                    <li>Suitable for any infrastructure</li>
-                    <li>Protection Against DDoS Attacks</li>
-                    <li>Documentation and Technical Support</li>
-                    <li>Admin console</li>
-                    <li>Fully managed</li>
-                    <li>Managing Firewall Rules</li>
-                    <li>Session record and playback</li>
-                    <li>Firewall for filtering SSH connections</li>
-                    <li>SSL traffic encryption</li>
-                  </ul>
-                </div>
-                <div className="plans">
-                  <div className="item-plan">
-                    <div className="box">
-                      <h3 className="title-plan">Community</h3>
-                      <ul>
-                        <li>
-                          <strong>Free</strong>
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                    </div>
-                    <div className="text">
-                      <p>
-                        Designed for engineers who prefer Do-it-yourself
-                        projects
-                      </p>
-                      <a
-                        href="https://docs.shellhub.io/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="btn"
-                      >
-                        Get Started
-                      </a>
-                    </div>
-                  </div>
-                  <div className="item-plan">
-                    <div className="box">
-                      <h3 className="title-plan">Enterprise</h3>
-                      <ul>
-                        <li>
-                          <strong>Based on the number of devices</strong>
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="text">
-                      <p>
-                        Designed for engineering teams with enterprises grade
-                        needs
-                      </p>
-                      <Link to="/contact" className="btn">
-                        Get in touch
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="info-geral-mobile">
-                <div>
-                  <div className="item">
-                    <h3>Price</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong>Free</strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>Based on the number of devices</strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>Host anywhere</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>Secure remote communication</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>Suitable for any infrastructure</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>Documentation and Technical Support</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>Admin console</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong></strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>Fully managed</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong></strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>Managing Firewall Rules</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong></strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>Session record and playback</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong></strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>Firewall for filtering SSH connections</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong></strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h3>SSL traffic encryption</h3>
-                    <ul>
-                      <li>
-                        <span>Community</span>
-                        <strong></strong>
-                      </li>
-                      <li>
-                        <span>Enterprise</span>
-                        <strong>
-                          <CheckedItemPlan />
-                        </strong>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="cards">
-                  <div className="card">
-                    <h3>Community plan</h3>
-                    <p>
-                      Designed for engineers who prefer Do-it-yourself projects
-                    </p>
-                    <a href="https://docs.shellhub.io/" target="_blank" rel="noreferrer">
-                      Get Started
-                    </a>
-                  </div>
-                  <div className="card">
-                    <h3>Enterprise plan</h3>
-                    <p>
-                      Designed for engineering teams with enterprises grade
-                      needs
-                    </p>
-                    <Link to="/contact" className="btn">
-                      Get in touch
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </TabPane>
             <TabPane
               tab={
                 <span>
-                  Cloud <strong>Beta</strong>
+                  Cloud
                 </span>
               }
-              key="cloud"
+              key="self"
             >
               <div className="info-geral">
                 <div className="items">
@@ -704,6 +388,322 @@ export default function PagePricing() {
                       version. New features will be added soon.{" "}
                     </p>
                     <Link to="/get-started">Get Started</Link>
+                  </div>
+                </div>
+              </div>
+            </TabPane>
+            <TabPane tab={<span>On premisis</span>} key="onPermisis">
+              <div className="info-geral">
+                <div className="items">
+                  <h3>Compare Our Plans</h3>
+                  <ul>
+                    <li>Price</li>
+                    <li>Host anywhere</li>
+                    <li>Secure remote communication</li>
+                    <li>Suitable for any infrastructure</li>
+                    <li>Protection Against DDoS Attacks</li>
+                    <li>Documentation and Technical Support</li>
+                    <li>Admin console</li>
+                    <li>Fully managed</li>
+                    <li>Managing Firewall Rules</li>
+                    <li>Session record and playback</li>
+                    <li>Firewall for filtering SSH connections</li>
+                    <li>SSL traffic encryption</li>
+                  </ul>
+                </div>
+                <div className="plans">
+                  <div className="item-plan">
+                    <div className="box">
+                      <h3 className="title-plan">Community</h3>
+                      <ul>
+                        <li>
+                          <strong>Free</strong>
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                    <div className="text">
+                      <p>
+                        Designed for engineers who prefer Do-it-yourself
+                        projects
+                      </p>
+                      <a
+                        href="https://docs.shellhub.io/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn"
+                      >
+                        Get Started
+                      </a>
+                    </div>
+                  </div>
+                  <div className="item-plan">
+                    <div className="box">
+                      <h3 className="title-plan">Enterprise</h3>
+                      <ul>
+                        <li>
+                          <strong>Based on the number of devices</strong>
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                        <li>
+                          <CheckedItemPlan />
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="text">
+                      <p>
+                        Designed for engineering teams with enterprises grade
+                        needs
+                      </p>
+                      <Link to="/contact" className="btn">
+                        Get a quote
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="info-geral-mobile">
+                <div>
+                  <div className="item">
+                    <h3>Price</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong>Free</strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>Based on the number of devices</strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Host anywhere</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Secure remote communication</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Suitable for any infrastructure</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Documentation and Technical Support</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Admin console</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Fully managed</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Managing Firewall Rules</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Session record and playback</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>Firewall for filtering SSH connections</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h3>SSL traffic encryption</h3>
+                    <ul>
+                      <li>
+                        <span>Community</span>
+                        <strong></strong>
+                      </li>
+                      <li>
+                        <span>Enterprise</span>
+                        <strong>
+                          <CheckedItemPlan />
+                        </strong>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="cards">
+                  <div className="card">
+                    <h3>Community plan</h3>
+                    <p>
+                      Designed for engineers who prefer Do-it-yourself projects
+                    </p>
+                    <a href="https://docs.shellhub.io/" target="_blank" rel="noreferrer">
+                      Get Started
+                    </a>
+                  </div>
+                  <div className="card">
+                    <h3>Enterprise plan</h3>
+                    <p>
+                      Designed for engineering teams with enterprises grade
+                      needs
+                    </p>
+                    <Link to="/contact" className="btn">
+                      Get a quote
+                    </Link>
                   </div>
                 </div>
               </div>

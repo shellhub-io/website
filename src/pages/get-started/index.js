@@ -41,7 +41,7 @@ export default function Home() {
             </div>
             <p>Access all benefits of ShellHub on a cloud-hosted service for your convenience.</p>
             <span>Register yourself and start it for free.</span>
-            <a  href="//cloud.shellhub.io/sign-up" target="_blank" rel="noreferrer" >Try cloud preview for free</a>
+            <a  href="//cloud.shellhub.io/sign-up" target="_blank" rel="noreferrer" >Get started</a>
           </div>
           <div className="card">
             <div className="title-card">
@@ -51,7 +51,7 @@ export default function Home() {
             </div>
             <p>Get a quote tailored for your business. </p>
             <span>Have all ShellHub infrastructure running into your own server.</span>
-            <Link  to="/contact">Contact us</Link>
+            <Link  to="/contact">Get a quote</Link>
           </div>
         </div>
       </div>

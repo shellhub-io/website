@@ -52,6 +52,20 @@ export const SectionPricingStyle = styled.section`
       &:first-child {
         .info-geral {
           .items {
+            padding-top: 1.25rem;;
+          }
+          .plans {
+            .item-plan {
+              .box {
+                padding-top: 20px;
+              }
+            }
+          }
+        }
+      }
+      &:last-child {
+        .info-geral {
+          .items {
             ul {
               li {
                 &:first-child {
@@ -70,25 +84,11 @@ export const SectionPricingStyle = styled.section`
           }
         }
       }
-      &:last-child {
-        .info-geral {
-          .items {
-            padding-top: 1.25rem;
-          }
-          .plans {
-            .item-plan {
-              .box {
-                padding-top: 20px;
-              }
-            }
-          }
-        }
-      }
     }
     .ant-tabs-nav-list {
       width: 100%;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       .ant-tabs-tab {
         display: flex;
         justify-content: center;

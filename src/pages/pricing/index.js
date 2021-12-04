@@ -404,7 +404,6 @@ export default function PagePricing() {
                     <li>Protection Against DDoS Attacks</li>
                     <li>Documentation and Technical Support</li>
                     <li>Admin console</li>
-                    <li>Fully managed</li>
                     <li>Managing Firewall Rules</li>
                     <li>Session record and playback</li>
                     <li>Firewall for filtering SSH connections</li>
@@ -439,7 +438,6 @@ export default function PagePricing() {
                         <li></li>
                         <li></li>
                         <li></li>
-                        <li></li>
                       </ul>
                     </div>
                     <div className="text">
@@ -463,9 +461,6 @@ export default function PagePricing() {
                       <ul>
                         <li>
                           <strong>Based on the number of devices</strong>
-                        </li>
-                        <li>
-                          <CheckedItemPlan />
                         </li>
                         <li>
                           <CheckedItemPlan />

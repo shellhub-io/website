@@ -392,7 +392,7 @@ export default function PagePricing() {
                 </div>
               </div>
             </TabPane>
-            <TabPane tab={<span>On premisis</span>} key="onPermisis">
+            <TabPane tab={<span>On premises</span>} key="onPremises">
               <div className="info-geral">
                 <div className="items">
                   <h3>Compare Our Plans</h3>

@@ -181,8 +181,7 @@ export default function PagePricing() {
                   <div className="bot-info">
                     <p className="msg">
                       Design for engineering teams that require the simplicity
-                      of a hosted and managed service. We are on the Beta
-                      version. New features will be added soon.
+                      of a hosted and managed service.
                     </p>
                     <div className="text">
                       <Link to="/get-started" className="btn">
@@ -384,8 +383,7 @@ export default function PagePricing() {
                   <div className="card">
                     <p>
                       Design for engineering teams that require the simplicity
-                      of a hosted and managed service. We are on the Beta
-                      version. New features will be added soon.{" "}
+                      of a hosted and managed service.
                     </p>
                     <Link to="/get-started">Get Started</Link>
                   </div>

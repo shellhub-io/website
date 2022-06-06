@@ -20,28 +20,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        trackingIds: [
-          process.env.GA_ID,
-        ],
-        gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
-          anonymize_ip: true,
-          cookie_expires: 0,
+        googleAnalytics: {
+          trackingId: process.env.GA_ID,
         },
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
-        },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-tagmanager`,
-      options: {
-        id: process.env.GTM_ID,
-        includeInDevelopment: true,
+        googleTagManager: {
+          trackingId: process.env.GTM_ID,
+	},
       },
     },
     {

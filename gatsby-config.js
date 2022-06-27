@@ -95,5 +95,18 @@ module.exports = {
         sv: 6,
       },
     },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: process.env.GA_ID,
+          cookieName: "google-analytics-cookie",
+        },
+        googleTagManager: {
+          trackingId: process.env.GTM_ID, // leave empty if you want to disable the tracker
+        },
+        environments: ["production", "development"],
+      },
+    },
   ],
 }

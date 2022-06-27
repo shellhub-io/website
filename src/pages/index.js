@@ -19,6 +19,9 @@ import IlustraSuccess from '../assets/ilustra-success.png'
 import Github from '../assets/github.svg'
 import ArrowBlue from '../assets/arrow-right-blue.svg'
 
+import Cookies from '../components/Cookies/index'
+
+
 export default function Home() {
   const [lang, setLang] = useState(0);
 
@@ -119,5 +122,7 @@ export default function Home() {
         </div>
       </div>
     </SectionSuccessStyle>
+
+    <Cookies />
   </Layout>
 }

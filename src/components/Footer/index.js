@@ -54,6 +54,7 @@ function Footer() {
                 <li><a href="https://docs.shellhub.io/" target="_blank" rel="noreferrer">Documentation</a></li>
                 <li><Link to="/articles">Articles</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
               </ul>
               <div className="text">
                 <h3>Get seamless remote access to any Linux device</h3>

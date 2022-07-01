@@ -31,7 +31,7 @@ export default function Home() {
             </div>
             <p>Host your own instance of ShellHub and count on the freedom to adapt it to your needs. </p>
             <span>Check the ShellHub installation guide and start right now!</span>
-            <a  href="https://docs.shellhub.io/" target="_blank" rel="noreferrer" >Get started</a>
+            <a  href="https://docs.shellhub.io/getting-started/installing/" target="_blank" rel="noreferrer" >Get started</a>
           </div>
           <div className="card">
             <div className="title-card">

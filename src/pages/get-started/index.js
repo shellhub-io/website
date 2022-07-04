@@ -41,7 +41,7 @@ export default function Home() {
             </div>
             <p>Access all benefits of ShellHub on a cloud-hosted service for your convenience.</p>
             <span>Register yourself and start it for free.</span>
-            <a  href="//cloud.shellhub.io/sign-up" target="_blank" rel="noreferrer" >Get started</a>
+            <a  href="//cloud.shellhub.io/sign-up" target="_blank" rel="noreferrer" >Create Free Account</a>
           </div>
           <div className="card">
             <div className="title-card">

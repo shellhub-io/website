@@ -30,8 +30,9 @@ export default function Home() {
               <p>A fully open-source version to access remote devices.</p>
             </div>
             <p>Host your own instance of ShellHub and count on the freedom to adapt it to your needs. </p>
-            <span>Check the ShellHub installation guide and start right now!</span>
-            <a  href="https://docs.shellhub.io/getting-started/installing/" target="_blank" rel="noreferrer" >Get started</a>
+            <a href="//docs.shellhub.io/getting-started/installing/">
+	      <span>Check the ShellHub installation guide and start right now!</span>
+	    </a>
           </div>
           <div className="card">
             <div className="title-card">
@@ -40,8 +41,10 @@ export default function Home() {
               <p>The simplicity of a hosted and managed cloud service.</p>
             </div>
             <p>Access all benefits of ShellHub on a cloud-hosted service for your convenience.</p>
-            <span>Register yourself and start it for free.</span>
-            <a  href="//cloud.shellhub.io/sign-up" target="_blank" rel="noreferrer" >Create Free Account</a>
+            <a href="//cloud.shellhub.io/sign-up" target="_blank" rel="noreferrer">
+              <span>Register yourself and start it for free.</span>
+	    </a>
+            <a href="//cloud.shellhub.io/sign-up" target="_blank" rel="noreferrer" className="btn">Create Free Account</a>
           </div>
           <div className="card">
             <div className="title-card">
@@ -49,9 +52,8 @@ export default function Home() {
               <h3>Enterprise Edition </h3>
               <p>The ShellHub's control in your hands.</p>
             </div>
-            <p>Get a quote tailored for your business. </p>
-            <span>Have all ShellHub infrastructure running into your own server.</span>
-            <Link  to="/contact">Get a quote</Link>
+	    <p>Have all ShellHub infrastructure running into your own server.</p>
+            <a href="/contact"><span>Get a quote tailored for your business.</span></a>
           </div>
         </div>
       </div>

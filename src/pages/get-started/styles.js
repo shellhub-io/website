@@ -74,7 +74,7 @@ export const SectionGetStartedStyle = styled.section`
         max-width: 251px;
         height: 56px;
       }
-      a {
+      a.btn {
         display: inline-block;
         line-height: 3.375rem;
         background-color: ${props => props.theme.primaryBlue};

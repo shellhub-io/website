@@ -30,7 +30,7 @@ export default function Home() {
               <p>A fully open-source version to access remote devices.</p>
             </div>
             <p>Host your own instance of ShellHub and count on the freedom to adapt it to your needs. </p>
-            <a href="//docs.shellhub.io/getting-started/installing/">
+            <a href="//docs.shellhub.io/self-hosted/deploying">
 	      <span>Check the ShellHub installation guide and start right now!</span>
 	    </a>
           </div>

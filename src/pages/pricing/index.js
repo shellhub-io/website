@@ -385,7 +385,7 @@ export default function PagePricing() {
                       Design for engineering teams that require the simplicity
                       of a hosted and managed service.
                     </p>
-                    <Link to="https://docs.shellhub.io/getting-started/installing/">Get Started</Link>
+                    <Link to="//docs.shellhub.io/self-hosted/deploying">Get Started</Link>
                   </div>
                 </div>
               </div>
@@ -444,7 +444,7 @@ export default function PagePricing() {
                         projects
                       </p>
                       <a
-                        href="https://docs.shellhub.io/getting-started/installing/"
+                        href="//docs.shellhub.io/self-hosted/deploying"
                         target="_blank"
                         rel="noreferrer"
                         className="btn"

@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         <div className="text">
           <TitleStyle>What is ShellHub?</TitleStyle>
-          <p>ShellHub is a modern SSH server for remotely accessing Linux devices via the command line (using any SSH client) or a web-based user interface.</p>
+          <p>ShellHub is a centralized SSH gateway that allows users to remotely access and manage their servers and devices from anywhere, using a web browser or a mobile app. It provides a secure and convenient way to connect to and control your servers and devices, and can help to improve the security of your servers by preventing unauthorized access.</p>
         </div>
       </div>
     </SectionWhatStyle>

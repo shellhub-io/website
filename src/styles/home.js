@@ -175,7 +175,7 @@ export const SectionWhatStyle = styled.section`
     flex: 1;
     margin-left: 6.1875rem;
     max-width: 449px;
-    margin-top: 97px;
+    margin-top: 0px;
     p {
       font-size: 1.375rem;
       line-height: 140%;

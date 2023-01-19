@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Script } from "gatsby"
 
 const SEO = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
@@ -27,6 +27,14 @@ const SEO = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title}
+      script={[
+        {
+          type: "text/javascript",
+          id: "rdstation",
+          async: true,
+          src: "https://d335luupugsy2.cloudfront.net/js/loader-scripts/4e4ab82d-4d7b-48aa-8350-4523a3c457dd-loader.js"
+        },
+      ]}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {

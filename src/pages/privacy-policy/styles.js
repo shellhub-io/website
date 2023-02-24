@@ -24,6 +24,7 @@ export const PrivacyPolicyStyle = styled.section`
       text-align: center;
       max-width: 1058px;
       margin: 0 auto;
+      margin-top: 1rem;
       font-weight: 300;
       font-size: 1.125rem;
       line-height: 140%;
@@ -46,6 +47,15 @@ export const PrivacyPolicyStyle = styled.section`
       margin: 1rem 0;
       line-height: 140%;
       color: ${props => props.theme.secondGray};
+      a {
+        color: ${props => props.theme.primaryBlue};
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+          color: ${props => props.theme.secondBlue};
+        }
+      }
     }
 
     ul {

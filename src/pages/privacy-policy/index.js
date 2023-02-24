@@ -4,6 +4,7 @@ import SEO from "../../components/Seo";
 import Cookies from "../../components/Cookies";
 
 import { PrivacyPolicyStyle } from "./styles";
+import { Link } from "gatsby";
 
 export default function PagePricing() {
   return (
@@ -26,185 +27,246 @@ export default function PagePricing() {
           </div>
 
           <div className="content">
-            <h1>Definitions</h1>
-            <p>For the purposes of this Privacy Policy:</p>
+            <h1>OS Systems Software LTDA</h1>
+            <p>
+              At ShellHub, accessible from{" "}
+              <a href="https://www.shellhub.io/" target="_blank">
+                https://www.shellhub.io/
+              </a>
+              , one of our main priorities is the privacy of our visitors. This
+              Privacy Policy document contains types of information that is
+              collected and recorded by ShellHub and how we use it.
+            </p>
+
+            <p>
+              If you have additional questions or require more information about
+              our Privacy Policy, do not hesitate to contact us.
+            </p>
+
+            <p>
+              This Privacy Policy applies only to our online activities and is
+              valid for visitors to our website with regards to the information
+              that they shared and/or collect in ShellHub. This policy is not
+              applicable to any information collected offline or via channels
+              other than this website.
+            </p>
+          </div>
+
+          <div className="content">
+            <h1>Consent</h1>
+            <p>
+              By using our website, you hereby consent to our Privacy Policy and
+              agree to its terms.
+            </p>
+          </div>
+
+          <div className="content">
+            <h1>Information we collect</h1>
+
+            <p>
+              The personal information that you are asked to provide, and the
+              reasons why you are asked to provide it, will be made clear to you
+              at the point we ask you to provide your personal information.
+            </p>
+
+            <p>
+              If you contact us directly, we may receive additional information
+              about you such as your name, email address, phone number, the
+              contents of the message and/or attachments you may send us, and
+              any other information you may choose to provide.
+            </p>
+            <p>
+              When you register for an Account, we may ask for your contact
+              information, including items such as name, company name, address,
+              email address, and telephone number.
+            </p>
+          </div>
+
+          <div className="content">
+            <h1>How we use your information</h1>
+            <p>
+              We use the information we collect in various ways, including to:
+            </p>
+
             <ul>
+              <li>Provide, operate, and maintain our website</li>
+              <li>Improve, personalize, and expand our website</li>
+              <li>Understand and analyze how you use our website</li>
               <li>
-                <span>Account:</span> means a unique account created for You to
-                access our Service or parts of our Service.
-              </li>
-
-              <li>
-                <span>Company:</span> refers to ShellHub.
-              </li>
-
-              <li>
-                <span>Cookies:</span> are small files that are placed on Your
-                computer, mobile device or any other device by a website,
-                containing the details of Your browsing history on that website
-                among its many uses.
+                Develop new products, services, features, and functionality
               </li>
               <li>
-                <span>Country:</span> refers to: Brazil.
+                Communicate with you, either directly or through one of our
+                partners, including for customer service, to provide you with
+                updates and other information relating to the website, and for
+                marketing and promotional purposes
               </li>
-
-              <li>
-                <span>Device:</span> means any device that can access the
-                Service such as a computer, a cellphone or a digital tablet.
-              </li>
-
-              <li>
-                <span>Personal Data:</span> is any information that relates to
-                an identified or identifiable individual.
-              </li>
-
-              <li>
-                <span>Service Provider :</span> means any natural or legal
-                person who processes the data on behalf of the Company. It
-                refers to third-party companies or individuals employed by the
-                Company to facilitate the Service, to provide the Service on
-                behalf of the Company, to perform services related to the
-                Service or to assist the Company in analyzing how the Service is
-                used..
-              </li>
-
-              <li>
-                <span>Third-party Social Media Service:</span> refers to:
-                Brazil.
-              </li>
-
-              <li>
-                <span>Device:</span> refers to any website or any social network
-                website through which a User can log in or create an account to
-                use the Service.
-              </li>
-
-              <li>
-                <span>Usage Data:</span> efers to data collected automatically,
-                either generated by the use of the Service or from the Service
-                infrastructure itself (for example, the duration of a page
-                visit).
-              </li>
-
-              <li>
-                <span>Website:</span> refers to ShellHub, accessible from
-                <a href="https://www.shellhub.io/">shellhub</a>
-              </li>
-
-              <li>
-                <span>You:</span> means the individual accessing or using the
-                Service, or the company, or other legal entity on behalf of
-                which such individual is accessing or using the Service, as
-                applicable.
-              </li>
+              <li>Send you emails</li>
+              <li>Find and prevent fraud</li>
             </ul>
           </div>
 
           <div className="content">
-            <h1>Collecting and Using Your Personal Data</h1>
-            <p>Types of Data Collected:</p>
-
-            <ul>
-              <li>
-                <span className="data-title">Personal Data:</span>
-                <p>
-                  While using Our Service, We may ask You to provide Us with
-                  certain personally identifiable information that can be used
-                  to contact or identify You. Personally identifiable
-                  information may include, but is not limited to:
-                </p>
-
-                <ul className="inside-ul">
-                  <li>Email address</li>
-                  <li>First name and last name</li>
-                  <li>Address, State, Province, ZIP/Postal code, City</li>
-                </ul>
-              </li>
-
-              <li>
-                <span className="data-title">Usage Data:</span>
-                <p>
-                  Usage Data is collected automatically when using the Service.
-                </p>
-                <p>
-                  Usage Data may include information such as Your Device's
-                  Internet Protocol address (e.g. IP address), browser type,
-                  browser version, the pages of our Service that You visit, the
-                  time and date of Your visit, the time spent on those pages,
-                  unique device identifiers and other diagnostic data.
-                </p>
-
-                <p>
-                  When You access the Service by or through a mobile device, We
-                  may collect certain information automatically, including, but
-                  not limited to, the type of mobile device You use, Your mobile
-                  device unique ID, the IP address of Your mobile device, Your
-                  mobile operating system, the type of mobile Internet browser
-                  You use, unique device identifiers and other diagnostic data.
-                </p>
-
-                <p>
-                  We may also collect information that Your browser sends
-                  whenever You visit our Service or when You access the Service
-                  by or through a mobile device.
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <div className="content">
-            <h1>Children's Privacy</h1>
+            <h1>Log Files</h1>
             <p>
-              Our Service does not address anyone under the age of 13. We do not
-              knowingly collect personally identifiable information from anyone
-              under the age of 13. If You are a parent or guardian and You are
-              aware that Your child has provided Us with Personal Data, please
-              contact Us. If We become aware that We have collected Personal
-              Data from anyone under the age of 13 without verification of
-              parental consent, We take steps to remove that information from
-              Our servers.
-            </p>
-
-            <p>
-              If We need to rely on consent as a legal basis for processing Your
-              information and Your country requires consent from a parent, We
-              may require Your parent's consent before We collect and use that
-              information.
+              ShellHub follows a standard procedure of using log files. These
+              files log visitors when they visit websites. All hosting companies
+              do this and a part of hosting services' analytics. The information
+              collected by log files include internet protocol (IP) addresses,
+              browser type, Internet Service Provider (ISP), date and time
+              stamp, referring/exit pages, and possibly the number of clicks.
+              These are not linked to any information that is personally
+              identifiable. The purpose of the information is for analyzing
+              trends, administering the site, tracking users' movement on the
+              website, and gathering demographic information.
             </p>
           </div>
 
           <div className="content">
-            <h1>Links to Other Websites</h1>
+            <h1>Cookies and Web Beacons</h1>
             <p>
-              Our Service may contain links to other websites that are not
-              operated by Us. If You click on a third party link, You will be
-              directed to that third party's site. We strongly advise You to
-              review the Privacy Policy of every site You visit.
-            </p>
-
-            <p>
-              We have no control over and assume no responsibility for the
-              content, privacy policies or practices of any third party sites or
-              services.
+              Like any other website, ShellHub uses 'cookies'. These cookies are
+              used to store information including visitors' preferences, and the
+              pages on the website that the visitor accessed or visited. The
+              information is used to optimize the users' experience by
+              customizing our web page content based on visitors' browser type
+              and/or other information.
             </p>
           </div>
 
           <div className="content">
-            <h1>Changes to this Privacy Policy</h1>
+            <h1>Advertising Partners Privacy Policies</h1>
             <p>
-              We may update Our Privacy Policy from time to time. We will notify
-              You of any changes by posting the new Privacy Policy on this page.
+              You may consult this list to find the Privacy Policy for each of
+              the advertising partners of ShellHub.
             </p>
 
             <p>
-              We will let You know via email and/or a prominent notice on Our
-              Service, prior to the change becoming effective and update the
-              "Last updated" date at the top of this Privacy Policy.
+              Third-party ad servers or ad networks uses technologies like
+              cookies, JavaScript, or Web Beacons that are used in their
+              respective advertisements and links that appear on ShellHub, which
+              are sent directly to users' browser. They automatically receive
+              your IP address when this occurs. These technologies are used to
+              measure the effectiveness of their advertising campaigns and/or to
+              personalize the advertising content that you see on websites that
+              you visit.
             </p>
 
             <p>
-              You are advised to review this Privacy Policy periodically for any
-              changes. Changes to this Privacy Policy are effective when they
+              Note that ShellHub has no access to or control over these cookies
+              that are used by third-party advertisers.
+            </p>
+          </div>
+
+          <div className="content">
+            <h1>Third Party Privacy Policies</h1>
+            <p>
+              ShellHub's Privacy Policy does not apply to other advertisers or
+              websites. Thus, we are advising you to consult the respective
+              Privacy Policies of these third-party ad servers for more detailed
+              information. It may include their practices and instructions about
+              how to opt-out of certain options.{" "}
+            </p>
+
+            <p>
+              You can choose to disable cookies through your individual browser
+              options. To know more detailed information about cookie management
+              with specific web browsers, it can be found at the browsers'
+              respective websites.
+            </p>
+          </div>
+
+          <div className="content">
+            <h1>CCPA Privacy Rights (Do Not Sell My Personal Information)</h1>
+            <p>
+              Under the CCPA, among other rights, California consumers have the
+              right to:
+            </p>
+            <p>
+              Request that a business that collects a consumer's personal data
+              disclose the categories and specific pieces of personal data that
+              a business has collected about consumers.
+            </p>
+            <p>
+              Request that a business delete any personal data about the
+              consumer that a business has collected.
+            </p>
+            <p>
+              Request that a business that sells a consumer's personal data, not
+              sell the consumer's personal data.
+            </p>
+            <p>
+              If you make a request, we have one month to respond to you. If you
+              would like to exercise any of these rights, please contact us.
+            </p>
+          </div>
+
+          <div className="content">
+            <h1>GDPR Data Protection Rights</h1>
+            <p>
+              We would like to make sure you are fully aware of all of your data
+              protection rights. Every user is entitled to the following:
+            </p>
+            <p>
+              The right to access – You have the right to request copies of your
+              personal data. We may charge you a small fee for this service.
+            </p>
+            <p>
+              The right to rectification – You have the right to request that we
+              correct any information you believe is inaccurate. You also have
+              the right to request that we complete the information you believe
+              is incomplete.
+            </p>
+            <p>
+              The right to erasure – You have the right to request that we erase
+              your personal data, under certain conditions.
+            </p>
+            <p>
+              The right to restrict processing – You have the right to request
+              that we restrict the processing of your personal data, under
+              certain conditions.
+            </p>
+            <p>
+              The right to object to processing – You have the right to object
+              to our processing of your personal data, under certain conditions.
+            </p>
+            <p>
+              The right to data portability – You have the right to request that
+              we transfer the data that we have collected to another
+              organization, or directly to you, under certain conditions.
+            </p>
+            <p>
+              If you make a request, we have one month to respond to you. If you
+              would like to exercise any of these rights, please contact us.
+            </p>
+          </div>
+
+          <div className="content">
+            <h1>Children's Information</h1>
+            <p>
+              Another part of our priority is adding protection for children
+              while using the internet. We encourage parents and guardians to
+              observe, participate in, and/or monitor and guide their online
+              activity.
+            </p>
+
+            <p>
+              ShellHub does not knowingly collect any Personal Identifiable
+              Information from children under the age of 13. If you think that
+              your child provided this kind of information on our website, we
+              strongly encourage you to contact us immediately and we will do
+              our best efforts to promptly remove such information from our
+              records.
+            </p>
+          </div>
+
+          <div className="content">
+            <h1>Changes to This Privacy Policy</h1>
+            <p>
+              We may update our Privacy Policy from time to time. Thus, we
+              advise you to review this page periodically for any changes. We
+              will notify you of any changes by posting the new Privacy Policy
+              on this page. These changes are effective immediately, after they
               are posted on this page.
             </p>
           </div>
@@ -212,17 +274,9 @@ export default function PagePricing() {
           <div className="content">
             <h1>Contact Us</h1>
             <p>
-              If you have any questions about this Privacy Policy, You can
-              contact us:
+              If you have any questions or suggestions about our Privacy Policy,
+              do not hesitate to <Link to="/contact">contact us</Link>.
             </p>
-
-            <ul className="inside-ul">
-              <li>By email: contato@ossystems.com</li>
-              <li>
-                By visiting this page on our website:
-                <a href="https://www.shellhub.io/contact">ShellHub</a>
-              </li>
-            </ul>
           </div>
         </div>
 

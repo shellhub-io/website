@@ -38,7 +38,7 @@
     "gatsby-plugin-sitemap": "^4.1.0",
     "gatsby-plugin-styled-components": "^4.1.0",
     "graphql": "^15.5.0",
-    "joi": "^17.4.0",
+    "joi": "^18.2.1",
     "react": "^17.0.1",
     "react-cookie-consent": "^7.5.0",
     "react-dom": "^17.0.1",
